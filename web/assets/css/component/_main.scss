@@ -133,20 +133,20 @@
           color: #ffffff;
         }
         .detail {
-          display: inline-block;
-          span {
-            color: #ffffff;
-            font-size: 16px;
-            font-family: owsald;
-            margin: 0 20px;
-            border-left: 1px solid rgba(255, 255, 255, 0.32);
-            .material-icons {
-              font-size: 14px;
-              margin: 0 10px;
-              vertical-align: middle;
-            }
-          }
-        }
+           display: inline-block;
+           span {
+             color: #ffffff;
+             font-size: 16px;
+             font-family: owsald;
+             margin: 0 20px;
+             border-left: 1px solid rgba(255, 255, 255, 0.32);
+             .material-icons {
+               font-size: 14px;
+               margin: 0 10px;
+               vertical-align: middle;
+             }
+           }
+         }
         .my-skills {
           padding: 50px 0;
           h5 {
@@ -217,17 +217,11 @@
         }
         .social {
           text-align: center;
-          .git {
+          img {
             display: inline-block;
             width: 30px;
             height: 30px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            border: 1px solid #ffffff;
             margin: 10px;
-            color: #ffffff;
-            padding: 8px;
           }
         }
       }
@@ -245,6 +239,17 @@
     i {
       margin: 0 0 30px 20px;
       font-size: 35px;
+      color: #3f41c8;
+    }
+    .item-menu {
+      display: none;
+    }
+  }
+  &.is-active {
+    display: inline-block;
+    .menu {
+      padding: 20px;
+      border: 1px solid #3f41c8;
       color: #3f41c8;
     }
   }
@@ -320,6 +325,84 @@
     }
   }
   .text {
-    
+    text-align: center;
+    display: block;
+    input {
+      width: 80%;
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 20px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      }
+    textarea {
+      width: 80%;
+      height: 400px;
+      padding: 10px;
+      margin-bottom: 20px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+    .send {
+      width: 30%;
+      height: 80px;
+      background-color: #3f41c8;
+      border: 2px solid #ffffff;
+      padding: 0 50px;
+      color: #fff;
+      font-size: 20px;
+      margin-top: 15px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+  }
+  .footer {
+    .detail {
+      padding: 10px 0 30px 0;
+      span {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: owsald;
+        margin: 0 20px;
+        .material-icons {
+          font-size: 14px;
+          margin: 0 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .btn-top {
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      padding: 8px;
+      margin: 0 auto;
+      background: #ffffff;
+     i {
+       color: #3f41c8;
+       font-size: 20px;
+     }
+    }
+    .social {
+      text-align: center;
+      padding: 30px 0 0 0;
+      .git {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        margin: 10px;
+        color: #ffffff;
+        padding: 8px;
+      }
+    }
   }
 }

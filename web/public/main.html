@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
     <title>Baik Chae Yeon</title>
 
     <!--font awesome-->
@@ -57,15 +57,19 @@
                             <ul class="nav-item">
                                 <li class="nav-link">
                                     <div class="line"></div>
-                                    <a href="#!">ABOUT</a>
+                                    <a href="/">HOME</a>
                                 </li>
                                 <li class="nav-link">
                                     <div class="line"></div>
-                                    <a href="#section.work">WORK</a>
+                                    <a href="/#about-me">ABOUT</a>
                                 </li>
                                 <li class="nav-link">
                                     <div class="line"></div>
-                                    <a href="#!">CONTACT ME</a>
+                                    <a href="/#work">WORK</a>
+                                </li>
+                                <li class="nav-link">
+                                    <div class="line"></div>
+                                    <a href="/#contant-me">CONTACT ME</a>
                                 </li>
                             </ul>
                         <div class="nav-item-2">
@@ -119,7 +123,7 @@
     </div>
 </section>
 
-<section class="about-me">
+<section class="about-me" id="location1">
     <div class="screen"></div>
     <div class="title-area">
         <div class="line-top"></div>
@@ -129,6 +133,9 @@
             <div class="box">
             <p class="name">Baik chae yeon</p>
                 <div class="detail">
+                    <span><i class="material-icons">
+                        location_on
+                    </i>Seoul, Korea</span>
                     <span><i class="material-icons">
                         call
                     </i>010-8962-7159</span>
@@ -160,9 +167,9 @@
                     </ul>
                 </div>
                 <div class="social">
-                        <a href="https://github.com/baik100" target="_blank"><div class="git">G</div></a>
-                        <a href="https://codepen.io/100cy/" target="_blank"><div class="git">C</div></a>
-                        <a href="#!" target="_blank"><div class="git" >B</div></a>
+                        <a href="https://github.com/baik100" target="_blank"><img src="../assets/img/git.png" alt=""></a>
+                        <a href="https://codepen.io/100cy/" target="_blank"><img src="../assets/img/codepen.png" alt=""></a>
+                        <a href="#!" target="_blank"><img src="../assets/img/git.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -175,7 +182,7 @@
     </div>
 </section>
 
-<section class="work">
+<section class="work" id="location2">
     <div class="container">
         <div class="title-area">
             <div class="line-top"></div>
@@ -186,6 +193,10 @@
             <i class="material-icons">
                 dialpad
             </i>
+            <div class="item-menu">
+                <div class="menu">landing</div>
+                <div class="menu">web</div>
+            </div>
         </div>
         <ul class="item">
             <li class="thumb">
@@ -287,7 +298,7 @@
     </div>
 </section>
 
-<section class="contact-me">
+<section class="contact-me" id="location3">
     <div class="container">
         <div class="title-area">
             <div class="line-top"></div>
@@ -295,21 +306,31 @@
             <h3>Contact me</h3>
         </div>
         <div class="text">
-            <div class="name">
-                name
-                <input type="text" placeholder="제목을 입력하세요">
-            </div>
-            <div class="mail">
-                mail
-                <input type="email" placeholder="이메일 또는 전화번호를 입력하세요">
-            </div>
-            <div class="text">
-                text
-                <input type="text" placeholder="내용을 입력하세요">
-            </div>
-            <div class="submit">
-                <input type="submit" value="메시지 보내기">
-            </div>
+            <input type="text" class="in-title" placeholder="제목을 입력하세요">
+            <input type="email" class="in-email" placeholder="이메일 또는 전화번호를 입력하세요">
+            <textarea name="text" id="" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+            <input type="submit" class="send" value="SEND">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <a href="https://github.com/baik100" target="_blank"><div class="git">G</div></a>
+            <a href="https://codepen.io/100cy/" target="_blank"><div class="git">C</div></a>
+            <a href="#!" target="_blank"><div class="git" >B</div></a>
+        </div>
+        <div class="detail">
+            <span>Copyright © 2017-2018. All rights reserved.</span>
+                    <span><i class="material-icons">
+                        call
+                    </i>010-8962-7159</span>
+            <span><i class="material-icons">
+                        mail_outline
+                    </i>bcy0729@naver.com</span>
+        </div>
+        <div class="btn-top">
+            <a href="#top"><i class="material-icons">
+                expand_less
+        </i></a>
         </div>
     </div>
 </section>

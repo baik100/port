@@ -763,7 +763,7 @@ header.header {
       bottom: 0;
       left: -100%;
       width: 100%;
-      height: 800px;
+      height: 900px;
       background-color: #3f41c8;
       text-align: right;
       padding: 20px;
@@ -777,13 +777,13 @@ header.header {
       header.header .main-header .side-menu .close {
         display: inline-block; }
         header.header .main-header .side-menu .close i {
-          margin-top: 30px;
+          margin-top: 40px;
           font-size: 50px;
           color: #ffffff; }
         header.header .main-header .side-menu .close :hover {
-          color: #b5b5b5; }
+          color: #8687c8; }
       header.header .main-header .side-menu .gnb {
-        padding: 80px 0; }
+        padding: 30px 0; }
         header.header .main-header .side-menu .gnb .nav-item .nav-link {
           display: block;
           list-style: none;
@@ -807,7 +807,7 @@ header.header {
             header.header .main-header .side-menu .gnb .nav-item .nav-link:hover a {
               color: rgba(255, 255, 255, 0.36); }
         header.header .main-header .side-menu .gnb .nav-item-2 {
-          padding: 80px 0;
+          padding: 50px 0;
           text-align: center; }
           header.header .main-header .side-menu .gnb .nav-item-2 .detail {
             display: inline-block;
@@ -1012,17 +1012,11 @@ header.header {
           color: #ffffff; }
     .about-me .title-area .about .box .social {
       text-align: center; }
-      .about-me .title-area .about .box .social .git {
+      .about-me .title-area .about .box .social img {
         display: inline-block;
         width: 30px;
         height: 30px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        border: 1px solid #ffffff;
-        margin: 10px;
-        color: #ffffff;
-        padding: 8px; }
+        margin: 10px; }
 
 .work {
   padding: 80px 0; }
@@ -1031,6 +1025,14 @@ header.header {
     .work .btn-item-menu i {
       margin: 0 0 30px 20px;
       font-size: 35px;
+      color: #3f41c8; }
+    .work .btn-item-menu .item-menu {
+      display: none; }
+  .work.is-active {
+    display: inline-block; }
+    .work.is-active .menu {
+      padding: 20px;
+      border: 1px solid #3f41c8;
       color: #3f41c8; }
   .work .item {
     margin: 0 auto;
@@ -1089,6 +1091,74 @@ header.header {
     background-color: #fff; }
   .contact-me .title-area h3 {
     color: #ffffff; }
+  .contact-me .text {
+    text-align: center;
+    display: block; }
+    .contact-me .text input {
+      width: 80%;
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 20px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px; }
+    .contact-me .text textarea {
+      width: 80%;
+      height: 400px;
+      padding: 10px;
+      margin-bottom: 20px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px; }
+    .contact-me .text .send {
+      width: 30%;
+      height: 80px;
+      background-color: #3f41c8;
+      border: 2px solid #ffffff;
+      padding: 0 50px;
+      color: #fff;
+      font-size: 20px;
+      margin-top: 15px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px; }
+  .contact-me .footer .detail {
+    padding: 10px 0 30px 0; }
+    .contact-me .footer .detail span {
+      color: #ffffff;
+      font-size: 16px;
+      font-family: owsald;
+      margin: 0 20px; }
+      .contact-me .footer .detail span .material-icons {
+        font-size: 14px;
+        margin: 0 10px;
+        vertical-align: middle; }
+  .contact-me .footer .btn-top {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 auto;
+    background: #ffffff; }
+    .contact-me .footer .btn-top i {
+      color: #3f41c8;
+      font-size: 20px; }
+  .contact-me .footer .social {
+    text-align: center;
+    padding: 30px 0 0 0; }
+    .contact-me .footer .social .git {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+      margin: 10px;
+      color: #ffffff;
+      padding: 8px; }
 
 /* footer */
 .form-control {

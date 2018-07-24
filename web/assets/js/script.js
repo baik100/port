@@ -14,9 +14,13 @@ $(document).ready(function() {
     })
 
     $('.scroll-down .scroll-toggle').click(function () {
-        $('.scroll-down .scroll-toggle').addClass('is`-active');
+        $('.scroll-down .scroll-toggle').addClass('is-active');
         $('html, body').animate({scrollTop:850},'50');
 
+    })
+
+    $('.work .btn-item-menu').click(function (){
+        $('.item-menu').addClass("is-active");
     })
 
 
