@@ -32,34 +32,14 @@
   height: 900px;
   text-align: left;
   position: relative;
-  .screen {
-    width: 100%;
-    background-color: rgba(63, 65, 200, 0.24);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   .main-banner {
     .text {
       position: relative;
       padding: 130px 0;
-      .text-1 {
-        max-width: 800px;
-        font-size: 70px;
-        font-family: owsald;
-        font-weight: 800;
-        color: #3f41c8;
-        span {
-          font-weight: 800;
-          font-size: 40px;
-        }
-      }
       .page-dots {
         position: absolute;
         .dot {
-          bottom: -100px;
+          top: 50%;
           left: 20px;
           margin-bottom: 10px;
           border: 3px solid #3f41c8;
@@ -69,6 +49,16 @@
           -moz-border-radius: 50%;
           border-radius: 50%;
         }
+      }
+      .text-1 {
+        max-width: 800px;
+        font-size: 70px;
+        font-family: owsald;
+        font-weight: 800;
+        color: #3f41c8;
+        line-height: 90px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
       }
     }
     .scroll-down {
@@ -115,6 +105,15 @@
   height: 480px;
   background: rgba(63, 65, 200, 0.76) url("http://mocomtech.com/wp-content/uploads/2018/01/light-mountian-bg.jpg") 50% 100%/ cover no-repeat;
   padding: 50px 0;
+  .screen {
+    width: 100%;
+    background-color: rgba(63, 65, 200, 0.24);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
   .title-area {
 
     .about {
@@ -159,14 +158,14 @@
           }
           .item {
 
-            >li {
+            > li {
               display: inline-block;
               width: 100px;
               height: 100px;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              border-radius: 50%;
-              background: rgba(239, 239, 239, 0.36);
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              border-radius: 10px;
+              background: #ffffff;
               text-align: center;
               vertical-align: middle;
               margin: 10px;
@@ -190,6 +189,30 @@
                 color: #ffc053;
               }
             }
+            li.html:hover {
+              background: #ff9294;
+              p {
+                color: #ffffff;
+              }
+            }
+            li.css:hover {
+              background: #5d94ff;
+              p {
+                color: #ffffff;
+              }
+            }
+            li.javascript:hover {
+              background: #ffa238;
+              p {
+                color: #ffffff;
+              }
+            }
+            li.jquery:hover {
+              background: #ffe56d;
+              p {
+                color: #ffffff;
+              }
+            }
           }
         }
         .social {
@@ -203,6 +226,8 @@
             border-radius: 50%;
             border: 1px solid #ffffff;
             margin: 10px;
+            color: #ffffff;
+            padding: 8px;
           }
         }
       }
@@ -284,10 +309,17 @@
 }
 .contact-me {
   background-color: #3f41c8;
-
+  text-align: center;
+  padding: 50px 0;
   .title-area {
+    .line-top {
+      background-color: #fff;
+    }
     h3 {
       color: #ffffff;
     }
+  }
+  .text {
+    
   }
 }

@@ -777,9 +777,11 @@ header.header {
       header.header .main-header .side-menu .close {
         display: inline-block; }
         header.header .main-header .side-menu .close i {
-          margin-top: 50px;
+          margin-top: 30px;
           font-size: 50px;
           color: #ffffff; }
+        header.header .main-header .side-menu .close :hover {
+          color: #b5b5b5; }
       header.header .main-header .side-menu .gnb {
         padding: 80px 0; }
         header.header .main-header .side-menu .gnb .nav-item .nav-link {
@@ -799,14 +801,40 @@ header.header {
             font-size: 30px;
             color: #ffffff;
             font-weight: 500; }
-        header.header .main-header .side-menu .gnb .nav-item .detail {
-          padding: 80px 0; }
-          header.header .main-header .side-menu .gnb .nav-item .detail .nav-item-2 .detail {
-            float: left;
-            width: 70%; }
-          header.header .main-header .side-menu .gnb .nav-item .detail .nav-item-2 .social {
-            float: left;
-            width: 30%; }
+          header.header .main-header .side-menu .gnb .nav-item .nav-link:hover {
+            border: 2px solid rgba(255, 255, 255, 0.61);
+            background-color: rgba(52, 54, 139, 0.51); }
+            header.header .main-header .side-menu .gnb .nav-item .nav-link:hover a {
+              color: rgba(255, 255, 255, 0.36); }
+        header.header .main-header .side-menu .gnb .nav-item-2 {
+          padding: 80px 0;
+          text-align: center; }
+          header.header .main-header .side-menu .gnb .nav-item-2 .detail {
+            display: inline-block;
+            padding-bottom: 30px; }
+            header.header .main-header .side-menu .gnb .nav-item-2 .detail span {
+              color: #ffffff;
+              font-size: 16px;
+              font-family: owsald;
+              margin: 0 20px;
+              border-left: 1px solid rgba(255, 255, 255, 0.32); }
+              header.header .main-header .side-menu .gnb .nav-item-2 .detail span .material-icons {
+                font-size: 14px;
+                margin: 0 10px;
+                vertical-align: middle; }
+          header.header .main-header .side-menu .gnb .nav-item-2 .social {
+            text-align: center; }
+            header.header .main-header .side-menu .gnb .nav-item-2 .social .git {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              border: 1px solid #ffffff;
+              margin: 10px;
+              color: #ffffff;
+              padding: 8px; }
 
 /**
  Main page style
@@ -836,30 +864,13 @@ header.header {
   height: 900px;
   text-align: left;
   position: relative; }
-  .visual .screen {
-    width: 100%;
-    background-color: rgba(63, 65, 200, 0.24);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
   .visual .main-banner .text {
     position: relative;
     padding: 130px 0; }
-    .visual .main-banner .text .text-1 {
-      max-width: 800px;
-      font-size: 70px;
-      font-family: owsald;
-      font-weight: 800;
-      color: #3f41c8; }
-      .visual .main-banner .text .text-1 span {
-        font-weight: 800;
-        font-size: 40px; }
     .visual .main-banner .text .page-dots {
       position: absolute; }
       .visual .main-banner .text .page-dots .dot {
-        bottom: -100px;
+        top: 50%;
         left: 20px;
         margin-bottom: 10px;
         border: 3px solid #3f41c8;
@@ -868,6 +879,15 @@ header.header {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
+    .visual .main-banner .text .text-1 {
+      max-width: 800px;
+      font-size: 70px;
+      font-family: owsald;
+      font-weight: 800;
+      color: #3f41c8;
+      line-height: 90px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
   .visual .main-banner .scroll-down {
     position: relative;
     margin: 30px auto;
@@ -907,6 +927,14 @@ header.header {
   height: 480px;
   background: rgba(63, 65, 200, 0.76) url("http://mocomtech.com/wp-content/uploads/2018/01/light-mountian-bg.jpg") 50% 100%/cover no-repeat;
   padding: 50px 0; }
+  .about-me .screen {
+    width: 100%;
+    background-color: rgba(63, 65, 200, 0.24);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .about-me .title-area .about .box {
     position: absolute;
     z-index: 10;
@@ -945,10 +973,10 @@ header.header {
         display: inline-block;
         width: 100px;
         height: 100px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        background: rgba(239, 239, 239, 0.36);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background: #ffffff;
         text-align: center;
         vertical-align: middle;
         margin: 10px; }
@@ -966,6 +994,22 @@ header.header {
         background: #8b6548; }
         .about-me .title-area .about .box .my-skills .item li.ai:hover p {
           color: #ffc053; }
+      .about-me .title-area .about .box .my-skills .item li.html:hover {
+        background: #ff9294; }
+        .about-me .title-area .about .box .my-skills .item li.html:hover p {
+          color: #ffffff; }
+      .about-me .title-area .about .box .my-skills .item li.css:hover {
+        background: #5d94ff; }
+        .about-me .title-area .about .box .my-skills .item li.css:hover p {
+          color: #ffffff; }
+      .about-me .title-area .about .box .my-skills .item li.javascript:hover {
+        background: #ffa238; }
+        .about-me .title-area .about .box .my-skills .item li.javascript:hover p {
+          color: #ffffff; }
+      .about-me .title-area .about .box .my-skills .item li.jquery:hover {
+        background: #ffe56d; }
+        .about-me .title-area .about .box .my-skills .item li.jquery:hover p {
+          color: #ffffff; }
     .about-me .title-area .about .box .social {
       text-align: center; }
       .about-me .title-area .about .box .social .git {
@@ -976,7 +1020,9 @@ header.header {
         -moz-border-radius: 50%;
         border-radius: 50%;
         border: 1px solid #ffffff;
-        margin: 10px; }
+        margin: 10px;
+        color: #ffffff;
+        padding: 8px; }
 
 .work {
   padding: 80px 0; }
@@ -1036,7 +1082,11 @@ header.header {
         margin-left: -15px; }
 
 .contact-me {
-  background-color: #3f41c8; }
+  background-color: #3f41c8;
+  text-align: center;
+  padding: 50px 0; }
+  .contact-me .title-area .line-top {
+    background-color: #fff; }
   .contact-me .title-area h3 {
     color: #ffffff; }
 

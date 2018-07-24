@@ -59,9 +59,12 @@ header.header {
       .close {
         display: inline-block;
         i{
-          margin-top: 50px;
+          margin-top: 30px;
           font-size: 50px;
           color: #ffffff;
+        }
+        & :hover {
+          color: #b5b5b5;
         }
       }
       .gnb {
@@ -86,18 +89,47 @@ header.header {
               color: #ffffff;
               font-weight:500;
             }
+            &:hover {
+              border: 2px solid rgba(255, 255, 255, 0.61);
+              background-color: rgba(52, 54, 139, 0.51);
+              a {
+                color: rgba(255, 255, 255, 0.36);
+              }
+            }
           }
+        }
+        .nav-item-2 {
+          padding: 80px 0;
+          text-align: center;
           .detail {
-            padding: 80px 0;
-            .nav-item-2 {
-              .detail {
-                float: left;
-                width: 70%;
+            display: inline-block;
+            padding-bottom: 30px;
+            span {
+              color: #ffffff;
+              font-size: 16px;
+              font-family: owsald;
+              margin: 0 20px;
+              border-left: 1px solid rgba(255, 255, 255, 0.32);
+              .material-icons {
+                font-size: 14px;
+                margin: 0 10px;
+                vertical-align: middle;
               }
-              .social {
-                float: left;
-                width: 30%;
-              }
+            }
+          }
+          .social {
+            text-align: center;
+            .git {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              border: 1px solid #ffffff;
+              margin: 10px;
+              color: #ffffff;
+              padding: 8px;
             }
           }
         }
