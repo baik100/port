@@ -5,7 +5,7 @@ header.header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  .main-header {
+  .top-header {
     h1 {
       float: left;
       margin-top: 60px;
@@ -13,26 +13,30 @@ header.header {
       font-weight: 800;
       color: #3f41c8;
       position: relative;
-      .line {
-        position: absolute;
-        top: 5px;
-        left: -10px;
-        width: 95px;
-        height: 10px;
-        background-color: #eaeaea;
-        z-index: -1;
-      }
+      //.line {
+      //  position: absolute;
+      //  top: 5px;
+      //  left: -10px;
+      //  width: 95px;
+      //  height: 10px;
+      //  background-color: #eaeaea;
+      //  z-index: -1;
+      //}
     }
-
+  }
+  .main-header {
+    position: relative;
     .btn {
       float: right;
-      i{
+      .material-icons {
         margin-top: 50px;
         font-size: 50px;
         color: #3f41c8;
       }
+      & :hover {
+        color: #b5b5b5;
+      }
     }
-
     .side-menu {
       position: fixed;
       z-index: 10;
@@ -54,10 +58,49 @@ header.header {
       }
       .close {
         display: inline-block;
-        color: #fff;
+        i{
+          margin-top: 50px;
+          font-size: 50px;
+          color: #ffffff;
+        }
       }
       .gnb {
+        padding: 80px 0;
+        .nav-item {
 
+          .nav-link {
+            display: block;
+            list-style: none;
+            width: 450px;
+            height: 90px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background-color: #34368b;
+            padding: 35px;
+            text-align: center;
+            margin: 0 auto 30px;
+            a {
+              font-family: "open sans";
+              font-size: 30px;
+              color: #ffffff;
+              font-weight:500;
+            }
+          }
+          .detail {
+            padding: 80px 0;
+            .nav-item-2 {
+              .detail {
+                float: left;
+                width: 70%;
+              }
+              .social {
+                float: left;
+                width: 30%;
+              }
+            }
+          }
+        }
       }
     }
   }

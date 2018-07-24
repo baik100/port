@@ -10,17 +10,25 @@
   h3 {
     position: relative;
     font-family: "owsald";
-    padding: 60px 0;
+    padding: 80px 0;
     font-size: 30px;
     color: #3f41c8;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.8em;
   }
+  .line-top {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -40px;
+    width: 70px;
+    height: 5px;
+    background-color: #3f41c8;
+  }
 }
 
 .visual {
-  background: rgba(63, 65, 200, 1) url("http://publicdomainarchive.com/wp-content/uploads/2016/01/public-domain-images-free-stock-photos-002.jpg") 50% 50%/ cover no-repeat;
   height: 900px;
   text-align: left;
   position: relative;
@@ -72,15 +80,6 @@
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
-      i {
-        position: absolute;
-        color: #ffffff;
-        font-size: 20px;
-        top: 15px;
-        left: 50%;
-        margin-left: -10px;
-        z-index: 2;
-      }
       .scroll-toggle {
         position: absolute;
         top: 0;
@@ -94,78 +93,134 @@
         -moz-border-radius: 50%;
         border-radius: 50%;
         box-shadow: 2px 5px 8px rgba(0,0,0,0.2);
+        i {
+          position: absolute;
+          color: #ffffff;
+          font-size: 20px;
+          top: 15px;
+          left: 50%;
+          margin-left: -10px;
+          z-index: 2;
+        }
+      }
+      &.is-active {
+        top: 50px;
       }
     }
   }
 }
 .about-me {
   position: relative;
-  background-color: #f6f6f6;
+  text-align: left;
+  height: 480px;
+  background: rgba(63, 65, 200, 0.76) url("http://mocomtech.com/wp-content/uploads/2018/01/light-mountian-bg.jpg") 50% 100%/ cover no-repeat;
   padding: 50px 0;
   .title-area {
 
     .about {
-      float: left;
-      width: 58%;
       .box {
         position: absolute;
-        z-index: 9;
-        top: 0;
-        left: 20%;
-        width: 500px;
+        z-index: 10;
+        top: -120px;
+        left: 0;
+        width: 1050px;
         height: 500px;
-        background-color: #fff;
-      }
-    }
-  }
-  .my-skills {
-    float: right;
-    width: 40%;
-    text-align: center;
-    h5 {
-      font-size: 20px;
-      font-family: "open sans";
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #525252;
-    }
-    .btn-down {
-      display: inline-block;
-      width: 100px;
-      height: 40px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      border: 1px solid #e4e4e4;
-    }
-    .item {
+        background-color: #3f41c8;
+        .name {
+          padding: 80px 0 20px 0;
+          font-size: 30px;
+          font-family: owsald;
+          font-weight: 800;
+          color: #ffffff;
+        }
+        .detail {
+          display: inline-block;
+          span {
+            color: #ffffff;
+            font-size: 16px;
+            font-family: owsald;
+            margin: 0 20px;
+            border-left: 1px solid rgba(255, 255, 255, 0.32);
+            .material-icons {
+              font-size: 14px;
+              margin: 0 10px;
+              vertical-align: middle;
+            }
+          }
+        }
+        .my-skills {
+          padding: 50px 0;
+          h5 {
+            font-size: 20px;
+            font-family: "open sans";
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #525252;
+          }
+          .item {
 
-      >li {
-        display: inline-block;
-        width: 85px;
-        height: 85px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        background: #efefef;
-        text-align: center;
-        vertical-align: middle;
-        margin: 20px;
-        p {
-          text-transform: uppercase;
-          color: #838383;
-          font-family: Oswald;
-          font-size: 16px;
-          padding: 20px 0;
+            >li {
+              display: inline-block;
+              width: 100px;
+              height: 100px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              background: rgba(239, 239, 239, 0.36);
+              text-align: center;
+              vertical-align: middle;
+              margin: 10px;
+              p {
+                text-transform: uppercase;
+                color: #3f41c8;
+                font-family: Oswald;
+                font-size: 16px;
+                padding: 30px 0;
+              }
+            }
+            li.ps:hover {
+              background: #34368b;
+              p {
+                color: #ffffff;
+              }
+            }
+            li.ai:hover {
+              background: #8b6548;
+              p {
+                color: #ffc053;
+              }
+            }
+          }
+        }
+        .social {
+          text-align: center;
+          .git {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            margin: 10px;
+          }
         }
       }
     }
   }
 }
 .work {
-  .title-area {
-    .line {
+  padding: 80px 0;
 
+  .title-area {
+
+  }
+  .btn-item-menu {
+    display: block;
+    i {
+      margin: 0 0 30px 20px;
+      font-size: 35px;
+      color: #3f41c8;
     }
   }
   .item {
