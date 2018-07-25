@@ -12,7 +12,7 @@
     font-family: "owsald";
     padding: 80px 0;
     font-size: 30px;
-    color: #3f41c8;
+    color: #000000;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.8em;
@@ -23,31 +23,41 @@
     left: 50%;
     margin-left: -40px;
     width: 70px;
-    height: 5px;
-    background-color: #3f41c8;
+    height: 8px;
+    background-color: #999999;
+  }
+  .line-bottom {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -40px;
+    width: 70px;
+    height: 8px;
+    background-color: #999999;
   }
 }
 
 .visual {
-  background: url("http://bcy0729.dothome.co.kr/port_/web/assets/img/bg02.png") 50% 100%/ cover no-repeat;
-  height: 900px;
-  text-align: left;
+  background: url("https://images.unsplash.com/photo-1522827144599-b1f5b28b2f52?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77cc652eedf57683d69e6acb1fd16b56&auto=format&fit=crop&w=1488&q=80") 50% 100%/ cover no-repeat;
+  height: 800px;
+  text-align: center;
   position: relative;
+  background-color: #ffcdc8;
   .main-banner {
     .text {
       .text-1 {
-        padding: 220px 0;
+        padding: 220px 0 200px 0;
         font-size: 70px;
         font-family: owsald;
         font-weight: 800;
-        color: #3f41c8;
+        color: #000000;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         p {
           font-family: "open sans";
           font-size: 20px;
           font-weight: 500;
-          color: #3f41c8;
+          color: #000000;
           margin: 40px 0 0 0;
         }
       }
@@ -69,7 +79,7 @@
         width: 50px;
         height: 50px;
         margin-left: -25px;
-        background-color: #3f41c8;
+        background-color: #000000;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -93,12 +103,12 @@
 .about-me {
   position: relative;
   text-align: left;
-  height: 480px;
-  background: rgba(63, 65, 200, 0.76) url("http://mocomtech.com/wp-content/uploads/2018/01/light-mountian-bg.jpg") 50% 100%/ cover no-repeat;
+  height: 550px;
   padding: 50px 0;
+  background: rgba(0, 0, 0, 0.76) url("https://images.unsplash.com/photo-1486458826750-9f4ef65e3e8f?ixlib=rb-0.3.5&s=b073ebf571b639155bf143b0c405074e&auto=format&fit=crop&w=1650&q=80") 50% 0/ cover no-repeat;
   .screen {
     width: 100%;
-    background-color: rgba(63, 65, 200, 0.24);
+    background-color: rgba(0, 0, 0, 0.61);
     position: absolute;
     top: 0;
     left: 0;
@@ -115,7 +125,7 @@
         left: 0;
         width: 1050px;
         height: 500px;
-        background-color: #3f41c8;
+        background-color: #000000;
         .name {
           padding: 80px 0 20px 0;
           font-size: 30px;
@@ -156,13 +166,13 @@
               -webkit-border-radius: 10px;
               -moz-border-radius: 10px;
               border-radius: 10px;
-              background: #ffffff;
+              background: #666666;
               text-align: center;
               vertical-align: middle;
               margin: 10px;
               p {
                 text-transform: uppercase;
-                color: #3f41c8;
+                color: #000000;
                 font-family: Oswald;
                 font-size: 16px;
                 padding: 30px 0;
@@ -170,36 +180,48 @@
             }
             li.ps:hover {
               background: #34368b;
+              transform: rotate(360deg);
+              transition: 1s;
               p {
                 color: #ffffff;
               }
             }
             li.ai:hover {
               background: #8b6548;
+              transform: rotate(360deg);
+              transition: 1s;
               p {
                 color: #ffc053;
               }
             }
             li.html:hover {
               background: #ff9294;
+              transform: rotate(360deg);
+              transition: 1s;
               p {
                 color: #ffffff;
               }
             }
             li.css:hover {
               background: #5d94ff;
+              transform: rotate(360deg);
+              transition: 1s;
               p {
                 color: #ffffff;
               }
             }
             li.javascript:hover {
               background: #ffa238;
+              transform: rotate(360deg);
+              transition: 1s;
               p {
                 color: #ffffff;
               }
             }
             li.jquery:hover {
               background: #ffe56d;
+              transform: rotate(360deg);
+              transition: 1s;
               p {
                 color: #ffffff;
               }
@@ -228,6 +250,7 @@
 }
 .work {
   padding: 80px 0;
+  transform: translate();
 
   .title-area {
 
@@ -237,18 +260,48 @@
     i {
       margin: 0 0 30px 20px;
       font-size: 35px;
-      color: #3f41c8;
+      color: #000000;
     }
     .item-menu {
       display: none;
+      &.is-active {
+        display: inline-block;
+        text-align: left;
+        transition: 1s;
+        .menu {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+          p {
+            display: inline-block;
+            font-size: 16px;
+            color: #999999;
+            font-weight: 400;
+          }
+          i {
+            font-size: 18px;
+            color: #999999;
+            padding: 24px 10px 0 0;
+            vertical-align: middle;
+          }
+        }
+        &:hover {
+          p {
+            color: #000;
+          }
+          i {
+            color: #000;
+          }
+        }
+      }
     }
   }
   &.is-active {
     display: inline-block;
     .menu {
       padding: 20px;
-      border: 1px solid #3f41c8;
-      color: #3f41c8;
+      border: 1px solid #000000;
+      color: #000000;
     }
   }
   .item {
@@ -264,23 +317,53 @@
         width: 100%;
         height: 500px;
         background-color: #333333;
+        text-align: center;
         .screen {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(63, 65, 200, 0.69);
+          display: none;
         }
-        .desc {
+        .cms {
+          padding: 220px 0;
+          font-size: 20px;
+          color: #ffffff;
+        }
+      }
+      &:hover {
+        .cms {
+          display: none;
+        }
+        .screen {
+          display: inline-block;
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-         }
+          background-color: rgba(0, 0, 0, 0.69);
+          .desc {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            p {
+              padding: 180px 0 50px 0;
+              font-size: 20px;
+              color: #ffffff;
+              margin-bottom: 30px;
+            }
+            .icon {
+              i {
+                font-size: 30px;
+                color: #ffffff;
+                padding: 0 20px;
+                &:hover {
+                  color: #666666;
+                }
+              }
+            }
+          }
+        }
       }
-
     }
   }
   li:nth-child(2n) {
@@ -294,14 +377,14 @@
       width: 50px;
       height: 50px;
       background-color: #ffffff;
-      border: 3px solid #3f41c8;
+      border: 3px solid #000000;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
       i {
         position: absolute;
         font-size: 30px;
-        color: #3f41c8;
+        color: #000000;
         top: 50%;
         left: 50%;
         margin-top: -15px;
@@ -311,12 +394,12 @@
   }
 }
 .contact-me {
-  background-color: #3f41c8;
+  background-color: #000000;
   text-align: center;
   padding: 50px 0;
   .title-area {
     .line-top {
-      background-color: #fff;
+      background-color: #333333;
     }
     h3 {
       color: #ffffff;
@@ -346,7 +429,7 @@
     .send {
       width: 30%;
       height: 80px;
-      background-color: #3f41c8;
+      background-color: #000000;
       border: 2px solid #ffffff;
       padding: 0 50px;
       color: #fff;
@@ -357,7 +440,7 @@
       border-radius: 6px;
       &:hover {
         background-color: #ffffff;
-        color: #3f41c8;
+        color: #000000;
       }
     }
   }

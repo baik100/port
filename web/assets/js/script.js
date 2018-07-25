@@ -14,13 +14,14 @@ $(document).ready(function() {
     })
 
     $('.scroll-down .scroll-toggle').click(function () {
-        $('html, body').animate({scrollTop:850},'50');
+        $('html, body').animate({scrollTop:730},'50');
 
     })
 
     $('.work .btn-item-menu').click(function (){
         $('.item-menu').addClass("is-active");
     })
+
 
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
