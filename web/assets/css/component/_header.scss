@@ -11,7 +11,7 @@ header.header {
       margin-top: 60px;
       font-size: 14px;
       font-weight: 800;
-      color: #3f41c8;
+      color: #c0c0c0;
       position: relative;
       //.line {
       //  position: absolute;
@@ -119,17 +119,18 @@ header.header {
           }
           .social {
             text-align: center;
-            .git {
+            img {
               display: inline-block;
               width: 30px;
               height: 30px;
+              margin: 8px;
+              opacity: 0.3;
               -webkit-border-radius: 50%;
               -moz-border-radius: 50%;
               border-radius: 50%;
-              border: 1px solid #ffffff;
-              margin: 10px;
-              color: #ffffff;
-              padding: 8px;
+              &:hover {
+                opacity: 1;
+              }
             }
           }
         }
