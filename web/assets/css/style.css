@@ -805,6 +805,10 @@ header.header {
           transition: 1s; }
       header.header .main-header .side-menu .gnb {
         padding: 30px 0; }
+        @media only screen and (max-width: 767px) {
+          header.header .main-header .side-menu .gnb {
+            padding: 50px 0 0;
+            margin: 0; } }
         header.header .main-header .side-menu .gnb .nav-item .nav-link {
           display: block;
           list-style: none;
@@ -840,16 +844,25 @@ header.header {
         header.header .main-header .side-menu .gnb .nav-item-2 {
           padding: 50px 0;
           text-align: center; }
+          @media only screen and (max-width: 767px) {
+            header.header .main-header .side-menu .gnb .nav-item-2 {
+              padding: 20px 0; } }
           header.header .main-header .side-menu .gnb .nav-item-2 .detail {
             display: inline-block;
-            padding-bottom: 30px; }
-            header.header .main-header .side-menu .gnb .nav-item-2 .detail span {
+            padding-bottom: 10px; }
+            header.header .main-header .side-menu .gnb .nav-item-2 .detail p {
+              display: inline-block;
               color: #ffffff;
               font-size: 16px;
               font-family: owsald;
               margin: 0 20px;
               border-left: 1px solid rgba(255, 255, 255, 0.32); }
-              header.header .main-header .side-menu .gnb .nav-item-2 .detail span .material-icons {
+              @media only screen and (max-width: 767px) {
+                header.header .main-header .side-menu .gnb .nav-item-2 .detail p {
+                  border: none;
+                  display: block;
+                  margin: 10px 0; } }
+              header.header .main-header .side-menu .gnb .nav-item-2 .detail p .material-icons {
                 font-size: 14px;
                 margin: 0 10px;
                 vertical-align: middle; }
@@ -996,6 +1009,7 @@ header.header {
     background-color: #000000; }
     @media only screen and (max-width: 767px) {
       .about-me .title-area .about .box {
+        position: relative;
         width: 100%;
         height: 230px; } }
     .about-me .title-area .about .box .name {
@@ -1092,6 +1106,13 @@ header.header {
           color: #ffffff; }
     .about-me .title-area .about .box .social {
       text-align: center; }
+      @media only screen and (max-width: 767px) {
+        .about-me .title-area .about .box .social {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -73px;
+          margin-top: -23px; } }
       .about-me .title-area .about .box .social img {
         display: inline-block;
         width: 30px;
@@ -1106,6 +1127,9 @@ header.header {
 
 .work {
   padding: 80px 0; }
+  @media only screen and (max-width: 767px) {
+    .work {
+      padding: 50px 0; } }
   .work .btn-item-menu {
     display: block; }
     .work .btn-item-menu i {
