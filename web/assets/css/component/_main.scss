@@ -16,6 +16,9 @@
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.8em;
+    @include screen-sm {
+      letter-spacing: 0.5em;
+    }
   }
   .line-top {
     position: absolute;
@@ -34,6 +37,9 @@
     width: 70px;
     height: 8px;
     background-color: #999999;
+    @include screen-sm {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -43,6 +49,9 @@
   text-align: center;
   position: relative;
   background-color: #ffcdc8;
+  @include screen-sm {
+    height: 810px;
+  }
   .main-banner {
     .text {
       .text-1 {
@@ -53,12 +62,20 @@
         color: #000000;
         text-transform: uppercase;
         letter-spacing: 0.1em;
+        @include screen-sm {
+          font-size: 50px;
+          padding: 220px 0 160px 0;
+        }
         p {
           font-family: "open sans";
           font-size: 20px;
           font-weight: 500;
           color: #000000;
           margin: 40px 0 0 0;
+          @include screen-sm {
+            font-size: 16px;
+            line-height: 30px;
+          }
         }
       }
     }
@@ -114,6 +131,9 @@
     left: 0;
     right: 0;
     bottom: 0;
+    @include screen-sm {
+      background-color: #fff;
+    }
   }
   .title-area {
 
@@ -126,21 +146,35 @@
         width: 1050px;
         height: 500px;
         background-color: #000000;
+        @include screen-sm {
+          width: 100%;
+          height: 230px;
+        }
         .name {
           padding: 80px 0 20px 0;
           font-size: 30px;
           font-family: owsald;
           font-weight: 800;
           color: #ffffff;
+          @include screen-sm {
+            padding: 50px 0;
+          }
         }
         .detail {
            display: inline-block;
-           span {
+           p {
+             display: inline-block;
              color: #ffffff;
              font-size: 16px;
              font-family: owsald;
              margin: 0 20px;
              border-left: 1px solid rgba(255, 255, 255, 0.32);
+             @include screen-sm {
+               border: none;
+               line-height: 30px;
+               margin: 0;
+               padding: 0;
+             }
              .material-icons {
                font-size: 14px;
                margin: 0 10px;
@@ -150,6 +184,9 @@
          }
         .my-skills {
           padding: 50px 0;
+          @include screen-sm {
+            padding: 80px 0;
+          }
           h5 {
             font-size: 20px;
             font-family: "open sans";
@@ -250,8 +287,6 @@
 }
 .work {
   padding: 80px 0;
-  transform: translate();
-
   .title-area {
 
   }
@@ -312,12 +347,20 @@
       width: 50%;
       text-align: center;
       padding: 20px;
+      @include screen-sm {
+        float: none;
+        width: 100%;
+        margin: 0 auto 30px;
+      }
       .images {
         position: relative;
         width: 100%;
         height: 500px;
         background-color: #333333;
         text-align: center;
+        @include screen-sm {
+          height: 300px;
+        }
         .screen {
           display: none;
         }
@@ -325,6 +368,9 @@
           padding: 220px 0;
           font-size: 20px;
           color: #ffffff;
+          @include screen-sm {
+            padding: 120px 0;
+          }
         }
       }
       &:hover {
@@ -350,6 +396,9 @@
               font-size: 20px;
               color: #ffffff;
               margin-bottom: 30px;
+              @include screen-sm {
+                padding: 100px 0 50px 0;
+              }
             }
             .icon {
               i {
@@ -371,6 +420,9 @@
   }
   .btn-more {
     padding: 50px 0 80px 0;
+    @include screen-sm {
+      padding: 0;
+    }
     .circle {
       position: relative;
       margin: auto;
@@ -403,6 +455,10 @@
     }
     h3 {
       color: #ffffff;
+      @include screen-sm {
+        margin: 0 auto;
+        max-width: 250px;
+      }
     }
   }
   .text {
@@ -416,6 +472,10 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
+      @include screen-sm {
+        height: 40px;
+        margin-bottom: 10px;
+      }
       }
     textarea {
       width: 80%;
@@ -425,6 +485,10 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
+      @include screen-sm {
+        height: 200px;
+        margin-bottom: 10px;
+      }
     }
     .send {
       width: 30%;
@@ -438,6 +502,10 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
+      @include screen-sm {
+        width: 80%;
+        height: 60px;
+      }
       &:hover {
         background-color: #ffffff;
         color: #000000;
@@ -446,15 +514,29 @@
   }
   .footer {
     padding: 80px 30px 30px 30px;
+    @include screen-sm {
+      padding: 0;
+    }
     .detail {
       float: left;
       padding-left: 30px;
       margin-top: 20px;
-      span {
+      @include screen-sm {
+        float: none;
+        padding: 30px 0;
+      }
+      p {
+        float: left;
         color: #ffffff;
         font-size: 16px;
         font-family: owsald;
         margin: 0 20px;
+        @include screen-sm {
+          float: none;
+          width: 100%;
+          margin: 0 auto 10px;
+          padding: 0;
+        }
         .material-icons {
           font-size: 14px;
           margin: 0 10px;
@@ -465,6 +547,11 @@
     .social {
       float: right;
       padding-right: 30px;
+      @include screen-sm {
+        float: none;
+        width: 100%;
+        padding: 30px 0 0;
+      }
       img {
         display: inline-block;
         width: 30px;

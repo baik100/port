@@ -746,6 +746,9 @@ header.header {
     font-weight: 800;
     color: #333333;
     position: relative; }
+    @media only screen and (max-width: 767px) {
+      header.header .top-header h1 {
+        margin-top: 20px; } }
     header.header .top-header h1:hover {
       color: #ffffff; }
   header.header .main-header {
@@ -756,6 +759,10 @@ header.header {
         margin-top: 50px;
         font-size: 50px;
         color: #000000; }
+        @media only screen and (max-width: 767px) {
+          header.header .main-header .btn .material-icons {
+            font-size: 30px;
+            margin-top: 10px; } }
       header.header .main-header .btn :hover {
         color: #b5b5b5;
         transform: rotate(180deg);
@@ -776,6 +783,10 @@ header.header {
       -ms-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
       -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
       transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1); }
+      @media only screen and (max-width: 767px) {
+        header.header .main-header .side-menu {
+          height: 800px;
+          padding: 0; } }
       header.header .main-header .side-menu.is-active {
         left: 0; }
       header.header .main-header .side-menu .close {
@@ -784,6 +795,10 @@ header.header {
           margin-top: 40px;
           font-size: 50px;
           color: #ffffff; }
+          @media only screen and (max-width: 767px) {
+            header.header .main-header .side-menu .close i {
+              font-size: 30px;
+              margin-top: 10px; } }
         header.header .main-header .side-menu .close :hover {
           color: #666666;
           transform: rotate(180deg);
@@ -802,11 +817,19 @@ header.header {
           padding: 35px;
           text-align: center;
           margin: 0 auto 30px; }
+          @media only screen and (max-width: 767px) {
+            header.header .main-header .side-menu .gnb .nav-item .nav-link {
+              width: 80%;
+              height: 60px;
+              padding: 20px; } }
           header.header .main-header .side-menu .gnb .nav-item .nav-link a {
             font-family: "open sans";
             font-size: 30px;
             color: #ffffff;
             font-weight: 500; }
+            @media only screen and (max-width: 767px) {
+              header.header .main-header .side-menu .gnb .nav-item .nav-link a {
+                font-size: 20px; } }
           header.header .main-header .side-menu .gnb .nav-item .nav-link:hover {
             border: 2px solid rgba(255, 255, 255, 0.61);
             background-color: rgba(102, 102, 102, 0.51);
@@ -859,6 +882,9 @@ header.header {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.8em; }
+    @media only screen and (max-width: 767px) {
+      .title-area h3 {
+        letter-spacing: 0.5em; } }
   .title-area .line-top {
     position: absolute;
     top: 50px;
@@ -875,6 +901,9 @@ header.header {
     width: 70px;
     height: 8px;
     background-color: #999999; }
+    @media only screen and (max-width: 767px) {
+      .title-area .line-bottom {
+        margin-bottom: 50px; } }
 
 .visual {
   background: url("https://images.unsplash.com/photo-1522827144599-b1f5b28b2f52?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77cc652eedf57683d69e6acb1fd16b56&auto=format&fit=crop&w=1488&q=80") 50% 100%/cover no-repeat;
@@ -882,6 +911,9 @@ header.header {
   text-align: center;
   position: relative;
   background-color: #ffcdc8; }
+  @media only screen and (max-width: 767px) {
+    .visual {
+      height: 810px; } }
   .visual .main-banner .text .text-1 {
     padding: 220px 0 200px 0;
     font-size: 70px;
@@ -890,12 +922,20 @@ header.header {
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.1em; }
+    @media only screen and (max-width: 767px) {
+      .visual .main-banner .text .text-1 {
+        font-size: 50px;
+        padding: 220px 0 160px 0; } }
     .visual .main-banner .text .text-1 p {
       font-family: "open sans";
       font-size: 20px;
       font-weight: 500;
       color: #000000;
       margin: 40px 0 0 0; }
+      @media only screen and (max-width: 767px) {
+        .visual .main-banner .text .text-1 p {
+          font-size: 16px;
+          line-height: 30px; } }
   .visual .main-banner .scroll-down {
     position: relative;
     margin: 0 auto;
@@ -943,6 +983,9 @@ header.header {
     left: 0;
     right: 0;
     bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .about-me .screen {
+        background-color: #fff; } }
   .about-me .title-area .about .box {
     position: absolute;
     z-index: 10;
@@ -951,26 +994,43 @@ header.header {
     width: 1050px;
     height: 500px;
     background-color: #000000; }
+    @media only screen and (max-width: 767px) {
+      .about-me .title-area .about .box {
+        width: 100%;
+        height: 230px; } }
     .about-me .title-area .about .box .name {
       padding: 80px 0 20px 0;
       font-size: 30px;
       font-family: owsald;
       font-weight: 800;
       color: #ffffff; }
+      @media only screen and (max-width: 767px) {
+        .about-me .title-area .about .box .name {
+          padding: 50px 0; } }
     .about-me .title-area .about .box .detail {
       display: inline-block; }
-      .about-me .title-area .about .box .detail span {
+      .about-me .title-area .about .box .detail p {
+        display: inline-block;
         color: #ffffff;
         font-size: 16px;
         font-family: owsald;
         margin: 0 20px;
         border-left: 1px solid rgba(255, 255, 255, 0.32); }
-        .about-me .title-area .about .box .detail span .material-icons {
+        @media only screen and (max-width: 767px) {
+          .about-me .title-area .about .box .detail p {
+            border: none;
+            line-height: 30px;
+            margin: 0;
+            padding: 0; } }
+        .about-me .title-area .about .box .detail p .material-icons {
           font-size: 14px;
           margin: 0 10px;
           vertical-align: middle; }
     .about-me .title-area .about .box .my-skills {
       padding: 50px 0; }
+      @media only screen and (max-width: 767px) {
+        .about-me .title-area .about .box .my-skills {
+          padding: 80px 0; } }
       .about-me .title-area .about .box .my-skills h5 {
         font-size: 20px;
         font-family: "open sans";
@@ -1045,8 +1105,7 @@ header.header {
           opacity: 1; }
 
 .work {
-  padding: 80px 0;
-  transform: translate(); }
+  padding: 80px 0; }
   .work .btn-item-menu {
     display: block; }
     .work .btn-item-menu i {
@@ -1091,18 +1150,29 @@ header.header {
       width: 50%;
       text-align: center;
       padding: 20px; }
+      @media only screen and (max-width: 767px) {
+        .work .item .thumb {
+          float: none;
+          width: 100%;
+          margin: 0 auto 30px; } }
       .work .item .thumb .images {
         position: relative;
         width: 100%;
         height: 500px;
         background-color: #333333;
         text-align: center; }
+        @media only screen and (max-width: 767px) {
+          .work .item .thumb .images {
+            height: 300px; } }
         .work .item .thumb .images .screen {
           display: none; }
         .work .item .thumb .images .cms {
           padding: 220px 0;
           font-size: 20px;
           color: #ffffff; }
+          @media only screen and (max-width: 767px) {
+            .work .item .thumb .images .cms {
+              padding: 120px 0; } }
       .work .item .thumb:hover .cms {
         display: none; }
       .work .item .thumb:hover .screen {
@@ -1124,6 +1194,9 @@ header.header {
             font-size: 20px;
             color: #ffffff;
             margin-bottom: 30px; }
+            @media only screen and (max-width: 767px) {
+              .work .item .thumb:hover .screen .desc p {
+                padding: 100px 0 50px 0; } }
           .work .item .thumb:hover .screen .desc .icon i {
             font-size: 30px;
             color: #ffffff;
@@ -1134,6 +1207,9 @@ header.header {
     margin-top: 100px; }
   .work .btn-more {
     padding: 50px 0 80px 0; }
+    @media only screen and (max-width: 767px) {
+      .work .btn-more {
+        padding: 0; } }
     .work .btn-more .circle {
       position: relative;
       margin: auto;
@@ -1161,6 +1237,10 @@ header.header {
     background-color: #333333; }
   .contact-me .title-area h3 {
     color: #ffffff; }
+    @media only screen and (max-width: 767px) {
+      .contact-me .title-area h3 {
+        margin: 0 auto;
+        max-width: 250px; } }
   .contact-me .text {
     text-align: center;
     display: block; }
@@ -1172,6 +1252,10 @@ header.header {
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px; }
+      @media only screen and (max-width: 767px) {
+        .contact-me .text input {
+          height: 40px;
+          margin-bottom: 10px; } }
     .contact-me .text textarea {
       width: 80%;
       height: 400px;
@@ -1180,6 +1264,10 @@ header.header {
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px; }
+      @media only screen and (max-width: 767px) {
+        .contact-me .text textarea {
+          height: 200px;
+          margin-bottom: 10px; } }
     .contact-me .text .send {
       width: 30%;
       height: 80px;
@@ -1192,27 +1280,50 @@ header.header {
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px; }
+      @media only screen and (max-width: 767px) {
+        .contact-me .text .send {
+          width: 80%;
+          height: 60px; } }
       .contact-me .text .send:hover {
         background-color: #ffffff;
         color: #000000; }
   .contact-me .footer {
     padding: 80px 30px 30px 30px; }
+    @media only screen and (max-width: 767px) {
+      .contact-me .footer {
+        padding: 0; } }
     .contact-me .footer .detail {
       float: left;
       padding-left: 30px;
       margin-top: 20px; }
-      .contact-me .footer .detail span {
+      @media only screen and (max-width: 767px) {
+        .contact-me .footer .detail {
+          float: none;
+          padding: 30px 0; } }
+      .contact-me .footer .detail p {
+        float: left;
         color: #ffffff;
         font-size: 16px;
         font-family: owsald;
         margin: 0 20px; }
-        .contact-me .footer .detail span .material-icons {
+        @media only screen and (max-width: 767px) {
+          .contact-me .footer .detail p {
+            float: none;
+            width: 100%;
+            margin: 0 auto 10px;
+            padding: 0; } }
+        .contact-me .footer .detail p .material-icons {
           font-size: 14px;
           margin: 0 10px;
           vertical-align: middle; }
     .contact-me .footer .social {
       float: right;
       padding-right: 30px; }
+      @media only screen and (max-width: 767px) {
+        .contact-me .footer .social {
+          float: none;
+          width: 100%;
+          padding: 30px 0 0; } }
       .contact-me .footer .social img {
         display: inline-block;
         width: 30px;
