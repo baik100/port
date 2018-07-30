@@ -121,11 +121,12 @@
 <section class="about-me" id="location1">
     <div class="screen"></div>
     <div class="title-area">
-        <div class="line-top"></div>
-        <div class="line-bottom"></div>
+        <div class="line-sel"></div>
+        <div class="line"></div>
+        <div class="line"></div>
         <!--<h3>About me</h3>-->
         <div class="about">
-            <div class="box">
+            <!--<div class="box">-->
                 <p class="name">Baik chae yeon</p>
                 <div class="detail">
                     <p><i class="material-icons">
@@ -142,21 +143,27 @@
                 <div class="my-skills">
                     <ul class="item">
                         <li class="ps">
-                            <p>photo<br>shop</p>
+                            <img src="http://bcy0729.dothome.co.kr/port_/web/assets/img/icon-01.png" alt="">
+                            <p>photoshop</p>
                         </li>
                         <li class="ai">
-                            <p>illust<br>rator</p>
+                            <img src="http://bcy0729.dothome.co.kr/port_/web/assets/img/icon-02.png" alt="">
+                            <p>illustrator</p>
                         </li>
                         <li class="html">
-                            <p>html<br>5</p>
+                            <img src="http://bcy0729.dothome.co.kr/port_/web/assets/img/icon-03.png" alt="">
+                            <p>html5</p>
                         </li>
                         <li class="css">
+                            <img src="http://bcy0729.dothome.co.kr/port_/web/assets/img/icon-04.png" alt="">
                             <p>css<br>scss</p>
                         </li>
                         <li class="javascript">
-                            <p>java<br>script</p>
+                            <img src="http://bcy0729.dothome.co.kr/port_/web/assets/img/icon-05.png" alt="">
+                            <p>javascript</p>
                         </li>
                         <li class="jquery">
+                            <img src="http://bcy0729.dothome.co.kr/port_/web/assets/img/icon-06.png" alt="">
                             <p>jquery</p>
                         </li>
                     </ul>
@@ -167,7 +174,7 @@
                     <a href="#!" target="_blank"><img src="../assets/img/behance.png" alt=""></a>
                 </div>
             </div>
-        </div>
+        <!--</div>-->
     </div>
     <div class="container">
 
@@ -180,8 +187,9 @@
 <section class="work" id="location2">
     <div class="container">
         <div class="title-area">
-            <div class="line-top"></div>
-            <div class="line-bottom"></div>
+            <div class="line"></div>
+            <div class="line-sel"></div>
+            <div class="line"></div>
             <h3>Work</h3>
         </div>
         <div class="btn-item-menu">
@@ -356,15 +364,19 @@
 <section class="contact-me" id="location3">
     <div class="container">
         <div class="title-area">
-            <div class="line-top"></div>
-            <div class="line-bottom"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line-sel"></div>
             <h3>Contact me</h3>
         </div>
         <div class="text">
-            <input type="text" class="in-title" placeholder="제목을 입력하세요">
-            <input type="email" class="in-email" placeholder="이메일 또는 전화번호를 입력하세요">
-            <textarea name="text" id="" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+            <form action=”https://formspree.io/bcy0729@naver.com" method=”POST”>
+            <input type="text" name="_subject" class="in-title" placeholder="제목을 입력하세요">
+            <input type="email" name=”_replyto” class="in-email" placeholder="이메일 또는 전화번호를 입력하세요">
+            <textarea name="message" placeholder="내용을 입력하세요"></textarea>
             <input type="submit" class="send" value="SEND">
+            <input type="hidden" name="_next" value="https://site.io/thanks.html" />
+            </form>
         </div>
     </div>
     <div class="footer">
