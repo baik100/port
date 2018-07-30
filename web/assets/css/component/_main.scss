@@ -9,7 +9,7 @@
   text-align: center;
   h3 {
     font-family: "owsald";
-    padding: 80px 0;
+    padding: 30px 0;
     font-size: 30px;
     color: #000000;
     font-weight: 800;
@@ -21,48 +21,43 @@
   }
   .line-sel {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    //border: 5px solid #3F51B5;
     background-color: #bb52bd;
     margin: 10px;
   }
   .line{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    background: #-webkit-linear-gradient(-45deg, #8489c4 0%,#b33aa5 100%);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid #3F51B5;
     margin: 10px;
-    @include screen-sm {
-      margin-bottom: 50px;
-    }
   }
 }
 
 .visual {
-  //background: -webkit-linear-gradient(-45deg, #954ad6 0%,#00d8c6 100%);
-  //background-color: #dfb0a6;
   background: url("http://bcy0729.dothome.co.kr/port_/web/assets/img/vi-bg.png") 100% 0/ cover no-repeat;
-  background-size: 800px;
+  background-size: 850px;
   height: 800px;
   text-align: left;
-  //position: relative;
   @include screen-sm {
-    height: 810px;
+    background-size: 100%;
   }
   @include screen-md {
-    height: 710px;
+    background-size: 400px;
+    padding: 0 50px;
   }
   .main-banner {
     .text {
       .text-1 {
-        padding: 220px 0 200px 0;
+        padding: 220px 0 250px 0;
         font-size: 70px;
         font-family: "open sans";
         font-weight: 800;
@@ -70,11 +65,13 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         @include screen-sm {
-          font-size: 50px;
-          padding: 220px 0 160px 0;
+          text-align: center;
+          font-size: 40px;
+          padding: 500px 0 200px 0;
         }
         @include screen-md {
           padding: 220px 0 100px 0;
+          text-align: center;
         }
         p {
           font-family: "open sans";
@@ -128,28 +125,14 @@
   }
 }
 .about-me {
-  position: relative;
   text-align: left;
-  height: 550px;
-  padding: 50px 0;
-  //background: rgba(0, 0, 0, 0.76) url("https://images.unsplash.com/photo-1486458826750-9f4ef65e3e8f?ixlib=rb-0.3.5&s=b073ebf571b639155bf143b0c405074e&auto=format&fit=crop&w=1650&q=80") 50% 0/ cover no-repeat;
-  .screen {
-    width: 100%;
-    //background-color: rgba(0, 0, 0, 0.61);
-    background-color: #f1ece6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    @include screen-sm {
-      background-color: #fff;
-    }
-    @include screen-md {
-      background-color: #fff;
-    }
-  }
+  padding: 80px 0;
+  background-color: #f1ece6;
   .title-area {
+    @include screen-sm {
+      display: inline-block;
+      vertical-align: middle;
+    }
 
     .about {
       .name {
@@ -158,8 +141,9 @@
         font-family: "open sans";
         font-weight: 800;
         color: #000000;
+        text-transform: uppercase;
         @include screen-sm {
-          padding: 50px 0;
+          padding: 10px 0;
         }
         @include screen-md {
           padding: 100px 0 20px 0;
@@ -192,7 +176,7 @@
       .my-skills {
         padding: 50px 0;
         @include screen-sm {
-          padding: 80px 0;
+          padding: 50px 0;
         }
         h5 {
           font-size: 20px;
@@ -210,128 +194,71 @@
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.51);
             border: 1px solid #ddd;
             text-align: center;
             vertical-align: middle;
             margin: 10px;
             img {
-              padding-top: 20px;
+              padding-top: 30px;
+              opacity: 0.6;
+              -webkit-filter: grayscale(100%);
+              filter: gray();
             }
             p {
               text-transform: uppercase;
-              color: #666;
+              color: #999;
               font-family: "open sans";
               font-weight: 400;
               font-size: 16px;
               padding: 30px 0;
             }
           }
-          li.ps:hover {
-            background: #34368b;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.33);
-            transition: 1s;
+          li:hover {
+            background: rgba(255, 255, 255, 1);
+            img {
+              opacity: 1;
+              -webkit-filter: grayscale(0%);
+              filter: none;
+            }
             p {
-              color: #ffffff;
+              color: #000;
             }
           }
-          li.ai:hover {
-            background: #8b6548;
-            transform: rotate(360deg);
-            transition: 1s;
-            p {
-              color: #ffc053;
-            }
-          }
-          li.html:hover {
-            background: #ff9294;
-            transform: rotate(360deg);
-            transition: 1s;
-            p {
-              color: #ffffff;
-            }
-          }
-          li.css:hover {
-            background: #5d94ff;
-            transform: rotate(360deg);
-            transition: 1s;
-            p {
-              color: #ffffff;
-            }
-          }
-          li.javascript:hover {
-            background: #ffa238;
-            transform: rotate(360deg);
-            transition: 1s;
-            p {
-              color: #ffffff;
-            }
-          }
-          li.jquery:hover {
-            background: #ffe56d;
-            transform: rotate(360deg);
-            transition: 1s;
-            p {
-              color: #ffffff;
-            }
-          }
-      //.box {
-      //  position: absolute;
-      //  z-index: 10;
-      //  top: -120px;
-      //  left: 0;
-      //  width: 80%;
-      //  height: 500px;
-      //  background: -webkit-linear-gradient(-45deg, #e88b51 0%,#00d8c6 100%);
-      //  //background-color: #000000;
-      //  @include screen-sm {
-      //    position: relative;
-      //    width: 100%;
-      //    height: 230px;
-      //  }
-      //  @include screen-md {
-      //    position: relative;
-      //    width: 100%;
-      //    height: 550px;
-      //  }
-      //    }
         }
-        .social {
-          text-align: center;
-          @include screen-sm {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-left: -73px;
-            margin-top: -23px;
-          }
-          img {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            margin: 8px;
+      }
+      .social {
+        text-align: center;
+        img {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin: 8px;
+          opacity: 0.8;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          &:hover {
             opacity: 0.3;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            &:hover {
-            opacity: 1;
-            }
           }
         }
       }
     }
   }
 }
+
 .work {
   padding: 80px 0;
   @include screen-sm {
-    padding: 50px 0;
+    padding: 80px 0;
   }
   @include screen-md {
     padding: 0;
   }
   .title-area {
+    @include screen-sm {
+      padding: 50px 0;
+    }
   }
   .btn-item-menu {
     display: block;
@@ -476,7 +403,7 @@
   .btn-more {
     padding: 50px 0 80px 0;
     @include screen-sm {
-      padding: 0;
+      padding: 30px 0 80px 0;
     }
     @include screen-md {
       padding: 0 0 30px 0;
@@ -506,7 +433,7 @@
 .contact-me {
   background-color: #f1ece6;
   text-align: center;
-  padding: 50px 0;
+  padding: 80px 0;
   .title-area {
     .line-top {
       background-color: #333333;
@@ -605,9 +532,10 @@
       }
       p {
         float: left;
-        color: #333333;
+        color: #999999;
         font-size: 16px;
         font-family: owsald;
+        font-weight: 400;
         margin: 0 20px;
         @include screen-sm {
           float: none;
@@ -639,12 +567,12 @@
         width: 30px;
         height: 30px;
         margin: 8px;
-        opacity: 0.3;
-        -webkit-border-radius: 50%;
+        opacity: 0.8;
+        -webkit-borde1r-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
         &:hover {
-          opacity: 1;
+          opacity: 0.5;
         }
       }
     }

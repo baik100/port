@@ -906,7 +906,7 @@ header.header {
   text-align: center; }
   .title-area h3 {
     font-family: "owsald";
-    padding: 80px 0;
+    padding: 30px 0;
     font-size: 30px;
     color: #000000;
     font-weight: 800;
@@ -917,8 +917,8 @@ header.header {
         letter-spacing: 0.5em; } }
   .title-area .line-sel {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -926,30 +926,29 @@ header.header {
     margin: 10px; }
   .title-area .line {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    background: #-webkit-linear-gradient -45deg, #8489c4 0%, #b33aa5 100%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid #3F51B5;
     margin: 10px; }
-    @media only screen and (max-width: 767px) {
-      .title-area .line {
-        margin-bottom: 50px; } }
 
 .visual {
   background: url("http://bcy0729.dothome.co.kr/port_/web/assets/img/vi-bg.png") 100% 0/cover no-repeat;
-  background-size: 800px;
+  background-size: 850px;
   height: 800px;
   text-align: left; }
   @media only screen and (max-width: 767px) {
     .visual {
-      height: 810px; } }
+      background-size: 100%; } }
   @media only screen and (max-width: 992px) {
     .visual {
-      height: 710px; } }
+      background-size: 400px;
+      padding: 0 50px; } }
   .visual .main-banner .text .text-1 {
-    padding: 220px 0 200px 0;
+    padding: 220px 0 250px 0;
     font-size: 70px;
     font-family: "open sans";
     font-weight: 800;
@@ -958,11 +957,13 @@ header.header {
     letter-spacing: 0.1em; }
     @media only screen and (max-width: 767px) {
       .visual .main-banner .text .text-1 {
-        font-size: 50px;
-        padding: 220px 0 160px 0; } }
+        text-align: center;
+        font-size: 40px;
+        padding: 500px 0 200px 0; } }
     @media only screen and (max-width: 992px) {
       .visual .main-banner .text .text-1 {
-        padding: 220px 0 100px 0; } }
+        padding: 220px 0 100px 0;
+        text-align: center; } }
     .visual .main-banner .text .text-1 p {
       font-family: "open sans";
       font-size: 20px;
@@ -1007,33 +1008,23 @@ header.header {
       top: 50px; }
 
 .about-me {
-  position: relative;
   text-align: left;
-  height: 550px;
-  padding: 50px 0; }
-  .about-me .screen {
-    width: 100%;
-    background-color: #f1ece6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-    @media only screen and (max-width: 767px) {
-      .about-me .screen {
-        background-color: #fff; } }
-    @media only screen and (max-width: 992px) {
-      .about-me .screen {
-        background-color: #fff; } }
+  padding: 80px 0;
+  background-color: #f1ece6; }
+  @media only screen and (max-width: 767px) {
+    .about-me .title-area {
+      display: inline-block;
+      vertical-align: middle; } }
   .about-me .title-area .about .name {
     padding: 30px 0 20px 0;
     font-size: 30px;
     font-family: "open sans";
     font-weight: 800;
-    color: #000000; }
+    color: #000000;
+    text-transform: uppercase; }
     @media only screen and (max-width: 767px) {
       .about-me .title-area .about .name {
-        padding: 50px 0; } }
+        padding: 10px 0; } }
     @media only screen and (max-width: 992px) {
       .about-me .title-area .about .name {
         padding: 100px 0 20px 0; } }
@@ -1062,7 +1053,7 @@ header.header {
     padding: 50px 0; }
     @media only screen and (max-width: 767px) {
       .about-me .title-area .about .my-skills {
-        padding: 80px 0; } }
+        padding: 50px 0; } }
     .about-me .title-area .about .my-skills h5 {
       font-size: 20px;
       font-family: "open sans";
@@ -1076,85 +1067,56 @@ header.header {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.51);
       border: 1px solid #ddd;
       text-align: center;
       vertical-align: middle;
       margin: 10px; }
       .about-me .title-area .about .my-skills .item > li img {
-        padding-top: 20px; }
+        padding-top: 30px;
+        opacity: 0.6;
+        -webkit-filter: grayscale(100%);
+        filter: gray(); }
       .about-me .title-area .about .my-skills .item > li p {
         text-transform: uppercase;
-        color: #666;
+        color: #999;
         font-family: "open sans";
         font-weight: 400;
         font-size: 16px;
         padding: 30px 0; }
-    .about-me .title-area .about .my-skills .item li.ps:hover {
-      background: #34368b;
-      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.33);
-      transition: 1s; }
-      .about-me .title-area .about .my-skills .item li.ps:hover p {
-        color: #ffffff; }
-    .about-me .title-area .about .my-skills .item li.ai:hover {
-      background: #8b6548;
-      transform: rotate(360deg);
-      transition: 1s; }
-      .about-me .title-area .about .my-skills .item li.ai:hover p {
-        color: #ffc053; }
-    .about-me .title-area .about .my-skills .item li.html:hover {
-      background: #ff9294;
-      transform: rotate(360deg);
-      transition: 1s; }
-      .about-me .title-area .about .my-skills .item li.html:hover p {
-        color: #ffffff; }
-    .about-me .title-area .about .my-skills .item li.css:hover {
-      background: #5d94ff;
-      transform: rotate(360deg);
-      transition: 1s; }
-      .about-me .title-area .about .my-skills .item li.css:hover p {
-        color: #ffffff; }
-    .about-me .title-area .about .my-skills .item li.javascript:hover {
-      background: #ffa238;
-      transform: rotate(360deg);
-      transition: 1s; }
-      .about-me .title-area .about .my-skills .item li.javascript:hover p {
-        color: #ffffff; }
-    .about-me .title-area .about .my-skills .item li.jquery:hover {
-      background: #ffe56d;
-      transform: rotate(360deg);
-      transition: 1s; }
-      .about-me .title-area .about .my-skills .item li.jquery:hover p {
-        color: #ffffff; }
-    .about-me .title-area .about .my-skills .social {
-      text-align: center; }
-      @media only screen and (max-width: 767px) {
-        .about-me .title-area .about .my-skills .social {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-left: -73px;
-          margin-top: -23px; } }
-      .about-me .title-area .about .my-skills .social img {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        margin: 8px;
-        opacity: 0.3;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%; }
-        .about-me .title-area .about .my-skills .social img:hover {
-          opacity: 1; }
+    .about-me .title-area .about .my-skills .item li:hover {
+      background: white; }
+      .about-me .title-area .about .my-skills .item li:hover img {
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+        filter: none; }
+      .about-me .title-area .about .my-skills .item li:hover p {
+        color: #000; }
+  .about-me .title-area .about .social {
+    text-align: center; }
+    .about-me .title-area .about .social img {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 8px;
+      opacity: 0.8;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+      .about-me .title-area .about .social img:hover {
+        opacity: 0.3; }
 
 .work {
   padding: 80px 0; }
   @media only screen and (max-width: 767px) {
     .work {
-      padding: 50px 0; } }
+      padding: 80px 0; } }
   @media only screen and (max-width: 992px) {
     .work {
       padding: 0; } }
+  @media only screen and (max-width: 767px) {
+    .work .title-area {
+      padding: 50px 0; } }
   .work .btn-item-menu {
     display: block; }
     .work .btn-item-menu i {
@@ -1270,7 +1232,7 @@ header.header {
     padding: 50px 0 80px 0; }
     @media only screen and (max-width: 767px) {
       .work .btn-more {
-        padding: 0; } }
+        padding: 30px 0 80px 0; } }
     @media only screen and (max-width: 992px) {
       .work .btn-more {
         padding: 0 0 30px 0; } }
@@ -1296,7 +1258,7 @@ header.header {
 .contact-me {
   background-color: #f1ece6;
   text-align: center;
-  padding: 50px 0; }
+  padding: 80px 0; }
   .contact-me .title-area .line-top {
     background-color: #333333; }
   .contact-me .title-area h3 {
@@ -1384,9 +1346,10 @@ header.header {
           display: inline-block; } }
       .contact-me .footer .detail p {
         float: left;
-        color: #333333;
+        color: #999999;
         font-size: 16px;
         font-family: owsald;
+        font-weight: 400;
         margin: 0 20px; }
         @media only screen and (max-width: 767px) {
           .contact-me .footer .detail p {
@@ -1415,12 +1378,12 @@ header.header {
         width: 30px;
         height: 30px;
         margin: 8px;
-        opacity: 0.3;
-        -webkit-border-radius: 50%;
+        opacity: 0.8;
+        -webkit-borde1r-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
         .contact-me .footer .social img:hover {
-          opacity: 1; }
+          opacity: 0.5; }
 
 /* footer */
 .form-control {

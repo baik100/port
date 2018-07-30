@@ -14,7 +14,7 @@ $(document).ready(function() {
     })
 
     $('.scroll-down .scroll-toggle').click(function () {
-        $('html, body').animate({scrollTop:730},'50');
+        $('html, body').animate({scrollTop:800},'50');
 
     })
 
