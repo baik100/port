@@ -4,6 +4,16 @@
 
 //section title common
 
+[class^="section"] {
+  height: 100vh;
+  &:before {
+    content:'';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
 .title-area {
   position: relative;
   text-align: center;
@@ -44,15 +54,17 @@
 
 .visual {
   background: url("http://bcy0729.dothome.co.kr/port_/web/assets/img/vi-bg.png") 100% 0/ cover no-repeat;
-  background-size: 850px;
+  background-size: 900px;
   height: 800px;
   text-align: left;
+  @include screen-md {
+    background-size: 80%;
+    padding: 0 50px;
+    height: 800px;
+  }
   @include screen-sm {
     background-size: 100%;
-  }
-  @include screen-md {
-    background-size: 400px;
-    padding: 0 50px;
+    height: 600px;
   }
   .main-banner {
     .text {
@@ -64,14 +76,14 @@
         color: #000000;
         text-transform: uppercase;
         letter-spacing: 0.1em;
+        @include screen-md {
+          padding: 400px 0 100px 0;
+          text-align: left;
+        }
         @include screen-sm {
           text-align: center;
-          font-size: 40px;
-          padding: 500px 0 200px 0;
-        }
-        @include screen-md {
-          padding: 220px 0 100px 0;
-          text-align: center;
+          font-size: 30px;
+          padding: 250px 0 30px 0;
         }
         p {
           font-family: "open sans";
@@ -80,7 +92,7 @@
           color: #000000;
           margin: 40px 0 0 0;
           @include screen-sm {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 30px;
           }
         }
@@ -142,11 +154,11 @@
         font-weight: 800;
         color: #000000;
         text-transform: uppercase;
-        @include screen-sm {
-          padding: 10px 0;
-        }
         @include screen-md {
-          padding: 100px 0 20px 0;
+          padding: 50px 0 50px 0;
+        }
+        @include screen-sm {
+          padding: 30px 0 10px 0;
         }
       }
       .detail {
@@ -253,7 +265,7 @@
     padding: 80px 0;
   }
   @include screen-md {
-    padding: 0;
+    padding: 80px 0;
   }
   .title-area {
     @include screen-sm {
@@ -331,6 +343,7 @@
         height: 500px;
         background-color: #333333;
         text-align: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
         @include screen-sm {
           height: 300px;
         }
@@ -457,7 +470,7 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
-      color: #dddddd;
+      color: #333333;
       border: 1px solid #dddddd;
       &:focus {
         border: 1px solid #000000;
@@ -475,7 +488,7 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
-      color: #dddddd;
+      color: #333333;
       border: 1px solid #dddddd;
       &:focus {
         border: 1px solid #000;
@@ -488,7 +501,7 @@
         height: 250px;
       }
     }
-    .send {
+    button {
       width: 30%;
       height: 80px;
       background: -webkit-linear-gradient(-45deg, #8489c4 0%,#b33aa5 100%);

@@ -38,8 +38,23 @@
             <a href="#"><h1>Portfolio 1.0</h1></a>
         </div>
         <div class="main-header">
-
             <nav>
+                <div class="gnb">
+                    <ul class="nav-item">
+                        <li class="nav-link">
+                            <div class="line"></div>
+                            <a href="/#about-me">ABOUT</a>
+                        </li>
+                        <li class="nav-link">
+                            <div class="line"></div>
+                            <a href="/#work">WORK</a>
+                        </li>
+                        <li class="nav-link">
+                            <div class="line"></div>
+                            <a href="/#contant-me">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="btn">
                     <i class="material-icons">
                         menu
@@ -52,7 +67,7 @@
                                 close
                             </i>
                         </div>
-                        <div class="gnb">
+                        <div class="side-gnb">
                             <ul class="nav-item">
                                 <li class="nav-link">
                                     <div class="line"></div>
@@ -214,10 +229,10 @@
         <ul class="item">
             <li class="thumb">
                 <div class="images">
-                    <img src="" alt="">
+                    <img src="http://www.zianedu.com/tt/zianpass/2019_geri_500zianpass_01.png" alt="">
                     <div class="screen">
                         <div class="desc">
-                            <p>title<br>
+                            <p>지안에듀 랜딩페이지<br>
                                 20180000-0000</p>
                             <div class="icon">
                                 <a href="#!"><i class="material-icons">
@@ -226,7 +241,7 @@
                                 <a href="#!"><i class="material-icons">
                                     stay_current_portrait
                                 </i></a>
-                                <a href="#!"><i class="material-icons">
+                                <a href="http://www.zianedu.com/tt/zianpass/2019_geri_500zianpass_2.html" target="_blank"><i class="material-icons">
                                     computer
                                 </i></a>
                             </div>
@@ -237,10 +252,10 @@
             </li>
             <li class="thumb">
                 <div class="images">
-                    <img src="" alt="">
+                    <img src="http://www.zianedu.com/tt/algisa/gas_gn_01.png" alt="">
                     <div class="screen">
                         <div class="desc">
-                            <p>title<br>
+                            <p>지안에듀 랜딩페이지<br>
                                 20180000-0000</p>
                             <div class="icon">
                                 <a href="#!"><i class="material-icons">
@@ -249,7 +264,7 @@
                                 <a href="#!"><i class="material-icons">
                                     stay_current_portrait
                                 </i></a>
-                                <a href="#!"><i class="material-icons">
+                                <a href="http://www.zianedu.com/tt/algisa/algisa_gas_gn.html" target="_blank"><i class="material-icons">
                                     computer
                                 </i></a>
                             </div>
@@ -370,12 +385,11 @@
             <h3>Contact me</h3>
         </div>
         <div class="text">
-            <form action=”https://formspree.io/bcy0729@naver.com" method=”POST”>
-            <input type="text" name="_subject" class="in-title" placeholder="제목을 입력하세요">
-            <input type="email" name=”_replyto” class="in-email" placeholder="이메일 또는 전화번호를 입력하세요">
-            <textarea name="message" placeholder="내용을 입력하세요"></textarea>
-            <input type="submit" class="send" value="SEND">
-            <input type="hidden" name="_next" value="https://site.io/thanks.html" />
+            <form method="POST" action="https://formspree.io/bcy0729@naver.com">
+                <input type="email" name="email" placeholder="Your email">
+                <input type="subject" name="subject" placeholder="Title">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">SEND</button>
             </form>
         </div>
     </div>

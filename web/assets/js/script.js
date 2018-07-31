@@ -5,6 +5,28 @@ $(document).ready(function() {
      *  UI 스크립트
      */
 
+        $(window).scroll(function () {
+            var sct = $(window).scrollTop();
+            // console.log(sct);
+
+            if(sct >200){
+                $("html").addClass("is-scroll");
+            }else{
+                $("html").removeClass("is-scroll");
+            }
+        })
+
+        $('.gnb .nav-link').on("click",function () {
+            var self = $(this);
+            var dataNav = self.data('nav');
+
+
+            console.log($(dataNav).offset());
+            var oft = $(dataNav).offset().top;
+
+            $('html, body').animate({scrollTop: oft}, 600)
+        })
+
     $('.main-header .btn').click(function (){
         $('.side-menu').addClass("is-active");
     })
@@ -81,6 +103,5 @@ $(document).ready(function() {
     };
 
 });
-
 
 
