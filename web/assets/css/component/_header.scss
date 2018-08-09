@@ -1,34 +1,13 @@
 /* Header */
 
 header.header {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
-  .top-header {
-    h1 {
-      float: left;
-      margin-top: 60px;
-      font-size: 14px;
-      font-weight: 800;
-      color: #333333;
-      position: relative;
-      @include screen-md {
-        margin: 30px 0 0 30px;
-      }
-      @include screen-sm {
-        margin: 20px 0 0 20px;
-      }
-      &:hover {
-        color: #ddd;
-      }
-    }
-  }
   .main-header {
-    position: relative;
     .gnb {
       float: right;
-      display: inline-block;
       padding: 50px 0;
       @include screen-md {
         display: none;
@@ -38,9 +17,9 @@ header.header {
       }
       ul {
         text-align: center;
-        .nav-link {
+        li {
           display: inline-block;
-          width: 150px;
+          width: 140px;
           height: 42px;
           line-height: 43px;
           -webkit-border-radius: 5px;
@@ -53,6 +32,11 @@ header.header {
             color: #ffffff;
             font-family: "open sans";
             font-weight: 400;
+            display: block;
+          }
+          .is-scroll & {
+            background-color: transparent;
+            border: 1px solid #000;
           }
         }
         li:hover {
@@ -142,9 +126,8 @@ header.header {
           padding: 50px 0 0;
           margin: 0;
         }
-        .nav-item {
-
-          .nav-link {
+        ul {
+          li {
             display: block;
             list-style: none;
             width: 450px;
@@ -166,6 +149,7 @@ header.header {
               font-size: 30px;
               color: #ffffff;
               font-weight: 500;
+              display: block;
               @include screen-sm {
                 font-size: 20px;
               }
