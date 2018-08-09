@@ -773,9 +773,13 @@ header.header {
           display: block; }
         .is-scroll header.header .main-header .gnb ul li {
           background-color: transparent;
-          border: 1px solid #000; }
+          border: none; }
+          .is-scroll header.header .main-header .gnb ul li a {
+            color: #000; }
       header.header .main-header .gnb ul li:hover {
         background-color: rgba(255, 255, 255, 0.7); }
+        .is-scroll header.header .main-header .gnb ul li:hover {
+          background-color: rgba(113, 120, 180, 0.61); }
   header.header .main-header .btn {
     display: none;
     float: right; }
@@ -938,19 +942,22 @@ header.header {
     vertical-align: middle; }
 
 .title-area {
-  position: relative;
-  text-align: center; }
+  text-align: left; }
   .title-area h3 {
     font-family: "owsald";
-    padding: 30px 0;
     font-size: 30px;
     color: #000000;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.8em; }
+    @media only screen and (max-width: 992px) {
+      .title-area h3 {
+        letter-spacing: 0.5em;
+        text-align: center; } }
     @media only screen and (max-width: 767px) {
       .title-area h3 {
-        letter-spacing: 0.5em; } }
+        letter-spacing: 0.5em;
+        text-align: center; } }
 
 .visual {
   height: 100vh;
@@ -966,6 +973,7 @@ header.header {
   .visual .main-banner {
     padding-top: 200px; }
     .visual .main-banner .text {
+      padding-top: 100px;
       font-size: 80px;
       font-family: "open sans";
       font-weight: 300;
@@ -979,7 +987,7 @@ header.header {
         .visual .main-banner .text {
           text-align: center;
           font-size: 30px;
-          padding: 250px 0 30px 0; } }
+          padding: 150px 0 30px 0; } }
       .visual .main-banner .text p {
         font-family: "open sans";
         font-size: 20px;
@@ -999,24 +1007,15 @@ header.header {
     width: 40%; }
 
 .work {
-  padding: 80px 0; }
+  padding: 50px 0; }
   @media only screen and (max-width: 767px) {
     .work {
       padding: 80px 0; } }
   @media only screen and (max-width: 992px) {
     .work {
       padding: 80px 0; } }
-  @media only screen and (max-width: 767px) {
-    .work .title-area {
-      padding: 50px 0; } }
-  .work.is-active {
-    display: inline-block; }
-    .work.is-active .menu {
-      padding: 20px;
-      border: 1px solid #000000;
-      color: #000000; }
   .work .item {
-    margin: 0 auto;
+    margin: 60px auto;
     list-style: none; }
     .work .item .thumb {
       float: left;
@@ -1098,7 +1097,7 @@ header.header {
 .contact {
   background-color: #f1ece6;
   text-align: center;
-  padding: 80px 0; }
+  padding: 50px 0; }
   .contact .title-area .line-top {
     background-color: #333333; }
   .contact .title-area h3 {
@@ -1108,10 +1107,11 @@ header.header {
         margin: 0 auto;
         max-width: 250px; } }
   .contact .text {
-    text-align: center;
-    display: block; }
+    text-align: right;
+    display: block;
+    margin-top: 100px; }
     .contact .text input {
-      width: 80%;
+      width: 70%;
       height: 50px;
       padding: 10px;
       margin-bottom: 20px;
@@ -1124,10 +1124,11 @@ header.header {
         border: 1px solid #000000; }
       @media only screen and (max-width: 767px) {
         .contact .text input {
+          text-align: center;
           height: 40px;
           margin-bottom: 10px; } }
     .contact .text textarea {
-      width: 80%;
+      width: 70%;
       height: 300px;
       padding: 10px;
       margin-bottom: 20px;
@@ -1140,10 +1141,12 @@ header.header {
         border: 1px solid #000; }
       @media only screen and (max-width: 767px) {
         .contact .text textarea {
+          text-align: center;
           height: 200px;
           margin-bottom: 10px; } }
       @media only screen and (max-width: 992px) {
         .contact .text textarea {
+          text-align: center;
           height: 250px; } }
     .contact .text button {
       width: 30%;
@@ -1166,8 +1169,9 @@ header.header {
 
 .footer {
   padding: 30px 30px 30px 30px;
-  background-color: #afaca7;
-  height: 100px; }
+  background-color: #c1c1c1;
+  height: 100px;
+  border-top: 1px solid #adadad; }
   @media only screen and (max-width: 767px) {
     .footer {
       padding: 0; } }

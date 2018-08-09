@@ -36,11 +36,17 @@ header.header {
           }
           .is-scroll & {
             background-color: transparent;
-            border: 1px solid #000;
+            border: none;
+            a {
+              color: #000;
+            }
           }
         }
         li:hover {
           background-color: rgba(255, 255, 255, 0.7);
+          .is-scroll & {
+            background-color: rgba(113, 120, 180, 0.61);
+          }
         }
       }
     }

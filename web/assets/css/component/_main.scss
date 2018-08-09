@@ -15,18 +15,21 @@
 }
 
 .title-area {
-  position: relative;
-  text-align: center;
+  text-align: left;
   h3 {
     font-family: "owsald";
-    padding: 30px 0;
     font-size: 30px;
     color: #000000;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.8em;
+    @include screen-md {
+      letter-spacing: 0.5em;
+      text-align: center;
+    }
     @include screen-sm {
       letter-spacing: 0.5em;
+      text-align: center;
     }
   }
 }
@@ -45,6 +48,7 @@
   .main-banner {
     padding-top: 200px;
     .text {
+      padding-top: 100px;
       font-size: 80px;
       font-family: "open sans";
       font-weight: 300;
@@ -57,7 +61,7 @@
       @include screen-sm {
         text-align: center;
         font-size: 30px;
-        padding: 250px 0 30px 0;
+        padding: 150px 0 30px 0;
       }
       p {
         font-family: "open sans";
@@ -84,28 +88,15 @@
 }
 
 .work {
-  padding: 80px 0;
+  padding: 50px 0;
   @include screen-sm {
     padding: 80px 0;
   }
   @include screen-md {
     padding: 80px 0;
   }
-  .title-area {
-    @include screen-sm {
-      padding: 50px 0;
-    }
-  }
-  &.is-active {
-    display: inline-block;
-    .menu {
-      padding: 20px;
-      border: 1px solid #000000;
-      color: #000000;
-    }
-  }
   .item {
-    margin: 0 auto;
+    margin: 60px auto;
     list-style: none;
     .thumb {
       float: left;
@@ -205,7 +196,7 @@
 .contact {
   background-color: #f1ece6;
   text-align: center;
-  padding: 80px 0;
+  padding: 50px 0;
   .title-area {
     .line-top {
       background-color: #333333;
@@ -219,10 +210,11 @@
     }
   }
   .text {
-    text-align: center;
+    text-align: right;
     display: block;
+    margin-top: 100px;
     input {
-      width: 80%;
+      width: 70%;
       height: 50px;
       padding: 10px;
       margin-bottom: 20px;
@@ -235,12 +227,13 @@
         border: 1px solid #000000;
       }
       @include screen-sm {
+        text-align: center;
         height: 40px;
         margin-bottom: 10px;
       }
     }
     textarea {
-      width: 80%;
+      width: 70%;
       height: 300px;
       padding: 10px;
       margin-bottom: 20px;
@@ -253,10 +246,12 @@
         border: 1px solid #000;
       }
       @include screen-sm {
+        text-align: center;
         height: 200px;
         margin-bottom: 10px;
       }
       @include screen-md {
+        text-align: center;
         height: 250px;
       }
     }
@@ -285,8 +280,9 @@
 
 .footer {
   padding: 30px 30px 30px 30px;
-  background-color: #afaca7;
+  background-color: #c1c1c1;
   height: 100px;
+  border-top: 1px solid #adadad;
   @include screen-sm {
     padding: 0;
   }

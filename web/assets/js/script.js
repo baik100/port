@@ -56,7 +56,7 @@ var myApp ={
             $('.side-menu').addClass("is-active");
         })
 
-        $(".close").click(function () {
+        $(".close,.side-gnb").click(function () {
             $(".side-menu").removeClass("is-active");
         })
 
