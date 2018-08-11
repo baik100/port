@@ -3,6 +3,7 @@
 header.header {
   position: fixed;
   top: 0;
+  right: 60px;
   z-index: 1000;
   width: 100%;
   .main-header {
@@ -34,13 +35,6 @@ header.header {
             font-weight: 400;
             display: block;
           }
-          .is-scroll & {
-            background-color: transparent;
-            border: none;
-            a {
-              color: #000;
-            }
-          }
         }
         li:hover {
           background-color: rgba(255, 255, 255, 0.7);
@@ -50,7 +44,7 @@ header.header {
         }
       }
     }
-    .btn {
+    .fixed {
       display: none;
       float: right;
       @include screen-md {
@@ -171,7 +165,7 @@ header.header {
             }
           }
         }
-        .nav-item-2 {
+        .nav-item {
           padding: 50px 0;
           text-align: center;
           @include screen-sm {
@@ -216,6 +210,34 @@ header.header {
               &:hover {
                 opacity: 1;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  .is-scroll & {
+    background: #fff;
+    right: 0;
+    height: 100px;
+    box-shadow: 1px 2px 15px #dddddd;
+    .main-header {
+      padding-right: 60px;
+      .gnb {
+        ul {
+
+          li {
+            background: none;
+            border: none;
+
+            a {
+              color: #666;
+            }
+          }
+          li:hover {
+            background: none;
+            a {
+              color: #4d527b;
             }
           }
         }
