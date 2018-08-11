@@ -217,13 +217,15 @@ header.header {
     }
   }
   .is-scroll & {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.69);
     right: 0;
-    height: 100px;
-    box-shadow: 1px 2px 15px #dddddd;
+    height: 85px;
+    border-bottom: 1px solid #ebebeb;
+    //box-shadow: 1px 2px 15px #dddddd;
     .main-header {
-      padding-right: 60px;
+      padding: 0 60px;
       .gnb {
+        padding: 25px 0;
         ul {
 
           li {
@@ -231,13 +233,19 @@ header.header {
             border: none;
 
             a {
-              color: #666;
+              color: #000;
             }
           }
           li:hover {
             background: none;
             a {
-              color: #4d527b;
+              color: #dc6fff;
+            }
+          }
+          li:focus {
+            background: none;
+            a {
+              color: #dc6fff;
             }
           }
         }
