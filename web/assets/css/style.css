@@ -971,7 +971,7 @@ header.header {
     .visual {
       background-size: 100%; } }
   .visual .text {
-    padding-top: 230px; }
+    padding-top: 240px; }
     .visual .text p {
       font-size: 80px;
       font-family: "open sans";
@@ -997,7 +997,7 @@ header.header {
   .about .title-area h3 {
     text-align: left;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 80px; }
   .about .text {
     text-align: left; }
@@ -1015,8 +1015,8 @@ header.header {
       font-weight: 800;
       color: #000; }
     .about p i {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
