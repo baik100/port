@@ -1,6 +1,6 @@
 body {
   font-family: 'Malgun Gothic', 'dotum', 'gulim' , 'sans-serif';
-  word-break:keep-all;
+  word-break:break-all;
   font-weight: 300;
   line-height: 1;
 }
@@ -15,7 +15,13 @@ body,html{height:100%;}
 .container {
   max-width: 1230px;
   margin: 0 auto;
-  padding: 0 15px;
+
+  @include screen-md {
+    padding: 0;
+  }
+  @include screen-sm {
+    padding: 0;
+  }
 }
 
 
