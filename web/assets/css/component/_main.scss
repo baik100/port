@@ -16,95 +16,119 @@
 
 
 .visual {
-  height: 100vh;
-  background: url("http://bcy0729.dothome.co.kr/port_/web/assets/img/vi-bg.png") 100% 0/ cover no-repeat;
-  background-size: 900px;
-  text-align: left;
-  @include screen-md {
-    background-size: 80%;
-  }
-  @include screen-sm {
-    background-size: 100%;
+  position: relative;
+  background: url('https://images.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?ixlib=rb-0.3.5&s=8d6f8b8456b5e0957770c1a0e1efcc48&auto=format&fit=crop&w=1650&q=80') 50% 100% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(64,64,64,0.125);
   }
 
   .text {
-    padding-top: 230px;
-    p{
-      font-size: 80px;
-      font-family: "open sans";
+    padding: 280px 0 150px;
+    h3 {
+      font-size: 70px;
+      font-weight: 600;
+      color: #ffffff;
+      text-transform: capitalize;
+      @include screen-sm {
+        font-size: 36px;
+      }
+    }
+    p {
+      font-size: 30px;
       font-weight: 300;
-      color: #000000;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
+      color: #fff;
+      text-transform: capitalize;
     }
     @include screen-md {
       text-align: left;
     }
     @include screen-sm {
       text-align: center;
-      font-size: 30px;
-      padding: 150px 0 30px 0;
+      font-size: 14px;
     }
   }
 }
 
 .about {
   background-color: #f9f9f9;
-  padding: 160px 50px 0 50px;
-  position: relative;
-  height: 100vh;
   text-align: center;
   .title-area {
+    padding: 80px 0 50px 0;
+    @include screen-sm {
+      padding: 80px 0;
+    }
     h3 {
-      text-align: left;
-      font-size: 28px;
-      font-weight: 500;
-      margin-bottom: 80px;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 400;
+      color: #bbbbbb;
+      @include screen-sm {
+        font-size: 50px;
+      }
     }
   }
   .text {
-    text-align: left;
+    text-align: center;
     .name {
-      float: left;
-      width: 40%;
-      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 80px;
+      @include screen-sm {
+        border: none;
+        margin-bottom: 80px;
       }
-    }
-    p {
-      color: #888;
-      font-size: 16px;
-      margin-bottom: 20px;
-      line-height: 1.8;
-      font-weight: 400;
-      span {
-        font-weight: 800;
-        color: #000;
-      }
-      i {
-        width: 28px;
-        height: 28px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        font-size: 14px;
-        padding: 6px;
-        background: #7f87cb;
-        vertical-align: middle;
-        color: #fff;
-        + i {
-          margin-left: 30px;
+      p {
+        display: inline-block;
+        color: #888;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        margin: 30px;
+        @include screen-sm {
+          display: block;
+        }
+        span {
+          font-weight: 800;
+          color: #000;
+        }
+        i {
+          width: 28px;
+          height: 28px;
+          padding: 6px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          font-size: 14px;
+          background: #57c4a9;
+          vertical-align: middle;
+          color: #fff;
         }
       }
     }
-    .skill {
-      float: right;
-      width: 60%;
-      text-align: left;
+
+    }
+  .skill {
+    padding: 50px 0;
+    @include screen-sm {
+      padding: 0 0 20px 0;
+    }
+    ul {
+      text-align: center;
       li {
-        text-align: center;
         display: inline-block;
-        padding-left: 90px;
         vertical-align: top;
+        width: 18%;
+        @include screen-sm {
+          width: 40%;
+        }
         img {
           height: 30px;
           margin-bottom: 20px;
@@ -114,46 +138,50 @@
           font-size: 14px;
           font-weight: 500;
           line-height: 1.2;
+          @include screen-sm {
+            margin-bottom: 30px;
+          }
         }
       }
     }
   }
-  .about-banner {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: -webkit-linear-gradient(-45deg, #8489c4 0%, #b33aa5 100%);
-    p {
+}
+
+.about-banner {
+  background: url("https://images.unsplash.com/photo-1489379391348-c9f07b42b696?ixlib=rb-0.3.5&s=6ebc2d3c048931c93f508592e7f8bbdd&auto=format&fit=crop&w=1650&q=80");
+  text-align: center;
+  @include screen-sm {
+    display: none;
+  }
+  p {
+    color: #fff;
+    padding: 80px 0 30px;
+  }
+  .btn-view {
+    display: inline-block;
+    margin: 0 auto 60px;
+    width: 160px;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    a {
       color: #fff;
-      padding: 80px 0 30px;
-    }
-    .btn-view {
-      display: inline-block;
-      margin: 0 auto 60px;
-      width: 160px;
-      padding: 14px 20px;
-      border: 1px solid #fff;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      a {
-        color: #fff;
-        font-weight: 400;
-        display: block;
-      }
+      font-weight: 400;
+      display: block;
     }
   }
-
+}
 
 .work {
-  padding: 100px 0;
+  padding: 50px 0;
   background: #dedede;
   @include screen-sm {
-    padding: 80px 0;
+    padding: 30px 0;
   }
   @include screen-md {
-    padding: 80px 0;
+    padding: 30px 0;
   }
   .item {
     margin: 60px auto;
@@ -161,8 +189,8 @@
     .thumb {
       display: inline-block;
       text-align: center;
-      padding: 20px;
-      width: 33%;
+      padding: 30px 30px;
+      width: 48%;
       @include screen-sm {
         width: 100%;
         margin: 0 auto 30px;
@@ -173,27 +201,21 @@
       .images {
         position: relative;
         width: 100%;
-        height: 360px;
+        height: 330px;
         background-color: #333333;
         text-align: center;
         overflow: hidden;
         border: 1px solid #ddd;
         .desc {
-          position: absolute;
-          top: 70%;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #fff;
-          border-top: 1px solid #ddd;
           padding: 20px;
           p {
             font-size: 16px;
             font-weight: 300;
+            color: rgba(255, 255, 255, 0.69);
             text-transform: uppercase;
             span {
               font-weight: 700;
-              color: #333;
+              color: #ffffff;
             }
           }
 
@@ -218,7 +240,7 @@
             background-color: rgba(0, 0, 0, 0.69);
             i {
               padding-top: 105px;
-              color: #fff;
+              color: #57c4a9;
               font-size: 50px;
             }
           }
@@ -236,6 +258,9 @@
     margin-bottom: 30px;
     font-weight: 600;
     font-size: 36px;
+    @include screen-sm {
+      font-size: 30px;
+    }
   }
   .text {
     text-align: center;
@@ -253,7 +278,6 @@
         border: 1px solid #333;
       }
       @include screen-sm {
-        text-align: center;
         height: 40px;
         margin-bottom: 10px;
       }
@@ -271,28 +295,27 @@
         border: 1px solid #000;
       }
       @include screen-sm {
-        text-align: center;
         height: 200px;
         margin-bottom: 10px;
       }
       @include screen-md {
-        text-align: center;
         height: 250px;
       }
     }
     button {
-      width: 30%;
-      height: 80px;
-      background: -webkit-linear-gradient(-45deg, #8489c4 0%, #b33aa5 100%);
-      padding: 0 50px;
+      display: block;
+      width: 150px;
+      height: 60px;
+      background: #57c4a9;
+      line-height: 60px;
       color: #fff;
       font-size: 18px;
-      margin-top: 15px;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
+      margin: 15px auto 0;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
       @include screen-sm {
-        width: 80%;
+        width: 100px;
         height: 60px;
       }
       &:hover {
@@ -309,23 +332,15 @@
   height: 180px;
   border-top: 1px solid #adadad;
   @include screen-sm {
-    padding: 0;
-  }
-  @include screen-md {
-    padding: 0;
+    padding: 20px 0;
+    text-align: center;
   }
   .detail {
     float: left;
     margin-top: 20px;
     @include screen-sm {
       float: none;
-      padding: 30px 0;
-      display: inline-block;
-    }
-    @include screen-md {
-      float: none;
-      padding: 30px 0;
-      display: inline-block;
+      margin: 0 auto;
     }
     p {
       float: left;
@@ -333,12 +348,9 @@
       font-size: 16px;
       font-family: owsald;
       font-weight: 400;
-      margin: 0 20px;
       @include screen-sm {
         float: none;
-        width: 100%;
-        margin: 0 auto 10px;
-        padding: 0;
+        margin: 0 auto;
       }
       .material-icons {
         font-size: 14px;
@@ -351,13 +363,7 @@
     float: right;
     @include screen-sm {
       float: none;
-      width: 100%;
-      padding: 30px 0 0;
-    }
-    @include screen-md {
-      float: none;
-      width: 100%;
-      padding: 30px 0 0;
+      margin: 0 auto;
     }
     img {
       display: inline-block;
@@ -372,5 +378,20 @@
         opacity: 0.5;
       }
     }
+  }
+}
+
+.back-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #57c4a9;
+  cursor: pointer;
+  i {
+    color: #57c4a9;
+    padding: 13px;
   }
 }
