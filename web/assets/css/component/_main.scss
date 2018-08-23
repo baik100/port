@@ -19,7 +19,7 @@
   position: relative;
   background: url('https://images.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?ixlib=rb-0.3.5&s=8d6f8b8456b5e0957770c1a0e1efcc48&auto=format&fit=crop&w=1650&q=80') 50% 100% no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover !important;
   text-align: center;
   &:before {
     content: '';
@@ -62,7 +62,7 @@
   background-color: #f9f9f9;
   text-align: center;
   .title-area {
-    padding: 80px 0 50px 0;
+    padding: 120px 0 30px 0;
     @include screen-sm {
       padding: 80px 0;
     }
@@ -80,7 +80,7 @@
     text-align: center;
     .name {
       border-bottom: 1px solid #ddd;
-      margin-bottom: 80px;
+      margin-bottom: 30px;
       @include screen-sm {
         border: none;
         margin-bottom: 80px;
@@ -176,7 +176,18 @@
 
 .work {
   padding: 50px 0;
-  background: #dedede;
+  background: rgba(87, 196, 169, 0.65);
+  position: relative;
+  //.light-box {
+  //  position: absolute;
+  //  top: 20%;
+  //  left: 50%;
+  //  margin-left: -400px;
+  //  width: 800px;
+  //  height: 500px;
+  //  background: #57c4a9;
+  //  z-index: 1000;
+  //}
   @include screen-sm {
     padding: 30px 0;
   }
@@ -193,10 +204,13 @@
       width: 48%;
       @include screen-sm {
         width: 100%;
-        margin: 0 auto 30px;
+        padding: 20px 30px;
+        margin: 0 auto;
       }
       @include screen-md {
-        margin: 0 auto 30px;
+        width: 100%;
+        padding: 20px 30px;
+        margin: 0 auto;
       }
       .images {
         position: relative;
@@ -205,7 +219,10 @@
         background-color: #333333;
         text-align: center;
         overflow: hidden;
-        border: 1px solid #ddd;
+        border: 1px solid #57c4a9;
+        @include screen-sm {
+          height: 180px;
+        }
         .desc {
           padding: 20px;
           p {
@@ -219,12 +236,6 @@
             }
           }
 
-        }
-        @include screen-sm {
-          height: 300px;
-        }
-        @include screen-md {
-          height: 300px;
         }
         .screen {
           display: none;
@@ -242,6 +253,9 @@
               padding-top: 105px;
               color: #57c4a9;
               font-size: 50px;
+              @include screen-sm {
+                padding-top: 30px;
+              }
             }
           }
         }
@@ -314,6 +328,7 @@
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
+      border: none;
       @include screen-sm {
         width: 100px;
         height: 60px;
