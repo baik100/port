@@ -5,7 +5,7 @@ $(document).ready(function() {
      *  UI 스크립트
      */
 
-    myApp.init()
+    portFolio.init()
 
 
     /**
@@ -16,20 +16,30 @@ $(document).ready(function() {
 });
 
 
-var myApp ={
+var portFolio ={
     init: function () {
-        myApp.isScroll();
-        myApp.spyScroll();
-        myApp.sideMenu();
+        portFolio.isScroll();
+        portFolio.spyScroll();
+        portFolio.sideMenu();
+        portFolio.anim();
+        portFolio.backTop();
+        portFolio.visualAnim();
+        portFolio.preLoader();
+    },
+
+    preLoader: function () {
+        $(window).on('load',function () {
+            $('.holder').delay(1500).fadeOut();
+        })
     },
 
 
     isScroll : function () {
         $(window).scroll(function () {
             var sct = $(window).scrollTop();
-            // console.log(sct);
-            ;
-            if(sct >600){
+            console.log(sct);
+
+            if(sct >500){
                 $("html").addClass("is-scroll");
             }else{
                 $("html").removeClass("is-scroll");
@@ -40,87 +50,50 @@ var myApp ={
     spyScroll: function () {
         $('.nav-link').on("click",function () {
             var self = $(this),
-            dataNav = self.data('nav');
+                dataNav = self.data('nav');
 
 
             console.log($(dataNav).offset());
             var oft = $(dataNav).offset().top;
 
-            $('html,body').animate({scrollTop: oft}, 600)
+            $('html,body').animate({scrollTop: oft})
         })
 
     },
 
     sideMenu : function () {
-        $('.main-header .btn').click(function (){
-            $('.side-menu').addClass("is-active");
+        $('.btn-menu').click(function (){
+            $('html').addClass("is-sideopen");
         })
 
-        $(".close,.side-gnb").click(function () {
-            $(".side-menu").removeClass("is-active");
+        $(".btn-close,.gnb li a").click(function () {
+            $("html").removeClass("is-sideopen");
         })
 
     },
-}
 
-//
-// var TxtType = function(el, toRotate, period) {
-//     this.toRotate = toRotate;
-//     this.el = el;
-//     this.loopNum = 0;
-//     this.period = parseInt(period, 10) || 2000;
-//     this.txt = '';
-//     this.tick();
-//     this.isDeleting = false;
-// };
-//
-// TxtType.prototype.tick = function() {
-//     var i = this.loopNum % this.toRotate.length;
-//     var fullTxt = this.toRotate[i];
-//
-//     if (this.isDeleting) {
-//         this.txt = fullTxt.substring(0, this.txt.length - 1);
-//     } else {
-//         this.txt = fullTxt.substring(0, this.txt.length + 1);
-//     }
-//
-//     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-//
-//     var that = this;
-//     var delta = 200 - Math.random() * 100;
-//
-//     if (this.isDeleting) { delta /= 2; }
-//
-//     if (!this.isDeleting && this.txt === fullTxt) {
-//         delta = this.period;
-//         this.isDeleting = true;
-//     } else if (this.isDeleting && this.txt === '') {
-//         this.isDeleting = false;
-//         this.loopNum++;
-//         delta = 500;
-//     }
-//
-//     setTimeout(function() {
-//         that.tick();
-//     }, delta);
-// };
-//
-// window.onload = function() {
-//     var elements = document.getElementsByClassName('typewrite');
-//     for (var i=0; i<elements.length; i++) {
-//         var toRotate = elements[i].getAttribute('data-type');
-//         var period = elements[i].getAttribute('data-period');
-//         if (toRotate) {
-//             new TxtType(elements[i], JSON.parse(toRotate), period);
-//         }
-//     }
-//     // INJECT CSS
-//     var css = document.createElement("style");
-//     css.type = "text/css";
-//     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ededed}";
-//     document.body.appendChild(css);
-// };
-//
-//
-//
-//
+    anim: function () {
+        $(window).on('load',function () {
+            TweenMax.from('.visual .text h3', 1, {y: 50, opacity: 0, delay:2});
+            TweenMax.from('.visual .text p', 2, {y: 50, opacity: 0, delay:2.1});
+        })
+    },
+
+    backTop: function () {
+      $('.back-top').on('click',function () {
+          var sct = $(window).scrollTop();
+          $('html,body').animate({ scrollTop: 0 });
+      })
+    },
+
+    visualAnim: function () {
+        $(window).on('scroll',function () {
+            const sct = $(window).scrollTop();
+            $('.visual').css({backgroundSize: 100 + sct / 100  +"%"})
+            $('.visual h3 , .visual p').css({opacity: 1 - sct /300})
+            $('.visual .text').css({transform: "translateY("
+                + sct / 3 + "px)"})
+        })
+    },
+
+}
