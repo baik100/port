@@ -12,13 +12,15 @@ $(document).ready(function() {
      *v lib
      */
 
+    lib.init();
 
 });
 
 
 var portFolio ={
     init: function () {
-        portFolio.isScroll();
+        portFolio.isScroll(500, "html", "is-scroll");
+        portFolio.isScroll(1000, ".back-top", "is-active");
         portFolio.spyScroll();
         portFolio.sideMenu();
         portFolio.anim();
@@ -34,15 +36,15 @@ var portFolio ={
     },
 
 
-    isScroll : function () {
+    isScroll : function (point, el, className) {
         $(window).scroll(function () {
             var sct = $(window).scrollTop();
             console.log(sct);
 
-            if(sct >500){
-                $("html").addClass("is-scroll");
+            if(sct > point){
+                $(el).addClass(className);
             }else{
-                $("html").removeClass("is-scroll");
+                $(el).removeClass(className);
             }
         })
     },
@@ -95,5 +97,14 @@ var portFolio ={
                 + sct / 3 + "px)"})
         })
     },
+};
 
-}
+const lib = {
+    init: function () {
+        $.fn.extend({
+          a: "sdfsdfsdfsdf",
+          aa:"sdfsdfsdfsdf,"
+        })
+    },
+
+};

@@ -18,9 +18,11 @@
 .visual {
   position: relative;
   background: url('https://images.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?ixlib=rb-0.3.5&s=8d6f8b8456b5e0957770c1a0e1efcc48&auto=format&fit=crop&w=1650&q=80') 50% 100% no-repeat;
-  background-attachment: fixed;
-  background-size: cover !important;
   text-align: center;
+  @include screen-sm {
+    background-size: cover !important;
+    background-attachment: fixed;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -398,15 +400,23 @@
 
 .back-top {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 60px;
+  bottom: -100px;
   width: 50px;
   height: 50px;
   background: #fff;
   border: 1px solid #57c4a9;
   cursor: pointer;
+  -webkit-transition:  0.6s;
+  -moz-transition:  0.6s;
+  -ms-transition:  0.6s;
+  -o-transition:  0.6s;
+  transition:  0.6s;
   i {
     color: #57c4a9;
     padding: 13px;
+  }
+  &.is-active {
+    bottom: 80px;
   }
 }
