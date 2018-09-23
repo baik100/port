@@ -963,9 +963,6 @@ header.header {
     height: 100%;
     background: rgba(64, 64, 64, 0.125); }
   .visual .text {
-<<<<<<< HEAD
-    padding-top: 240px; }
-=======
     padding: 280px 0 150px; }
     .visual .text h3 {
       font-size: 70px;
@@ -975,7 +972,6 @@ header.header {
       @media only screen and (max-width: 767px) {
         .visual .text h3 {
           font-size: 36px; } }
->>>>>>> feature/#001_add_thumb
     .visual .text p {
       font-size: 30px;
       font-weight: 300;
@@ -992,13 +988,6 @@ header.header {
 .about {
   background-color: #f9f9f9;
   text-align: center; }
-<<<<<<< HEAD
-  .about .title-area h3 {
-    text-align: left;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 80px; }
-=======
   .about .title-area {
     padding: 120px 0 30px 0; }
     @media only screen and (max-width: 767px) {
@@ -1012,36 +1001,11 @@ header.header {
       @media only screen and (max-width: 767px) {
         .about .title-area h3 {
           font-size: 50px; } }
->>>>>>> feature/#001_add_thumb
   .about .text {
     text-align: center; }
     .about .text .name {
       border-bottom: 1px solid #ddd;
       margin-bottom: 30px; }
-<<<<<<< HEAD
-  .about p {
-    color: #888;
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.8;
-    font-weight: 400; }
-    .about p span {
-      font-weight: 800;
-      color: #000; }
-    .about p i {
-      width: 26px;
-      height: 26px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      font-size: 14px;
-      padding: 6px;
-      background: #7f87cb;
-      vertical-align: middle;
-      color: #fff; }
-      .about p i + i {
-        margin-left: 30px; }
-=======
       @media only screen and (max-width: 767px) {
         .about .text .name {
           border: none;
@@ -1070,7 +1034,6 @@ header.header {
           background: #57c4a9;
           vertical-align: middle;
           color: #fff; }
->>>>>>> feature/#001_add_thumb
   .about .skill {
     padding: 50px 0; }
     @media only screen and (max-width: 767px) {
