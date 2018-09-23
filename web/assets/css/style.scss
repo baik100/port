@@ -2,6 +2,9 @@
 @import "variable";
 @import "module/mixin";
 
+//MOTION
+@import "component/motion";
+
 // BASE CSS
 @import "base/reset";
 @import "base/common";
